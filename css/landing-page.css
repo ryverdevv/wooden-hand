@@ -50,6 +50,7 @@ body{
     font-size: 16px;
     font-weight: 500;
     color: white;
+    cursor: pointer;
 }
 
 hr{
@@ -81,6 +82,13 @@ hr{
     font-weight: 400;
     cursor: pointer;
     font-size: 16px;
+    transition: 0.3s ease;
+}
+
+#shopNow:hover{
+    background-color: #4E7D62;
+    border: 1px solid white;
+    color: white;
 }
 
 /* Home Section Right */
@@ -312,8 +320,48 @@ hr{
     padding: 120px 90px;
 }
 
-.FAQ-left h1{
+.FAQ-container{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.FAQ .faqHead{
+    font-size: 20px;
+}
+
+.FAQ p{
+    font-size: 18px;
+}
+.FAQ h1{
     font-weight: 300;
+    font-size: 45px;
+}
+
+.FAQ-left img{
+    margin-top: 20px;
+    width: 100%;
+    height: 80vh;
+}
+
+.FAQ-right .column-1 h1{
+    font-size: 25px;
+}
+
+.column-1{
+    width: 160%;
+    margin-top: 40px;
+}
+
+
+.columnButton1{
+    display: flex;
+    font-size: 30px;
+    justify-self: right;
+    background-color: transparent;
+    border: none;
+    font-weight: 200;
+    cursor: pointer;
 }
 
 
