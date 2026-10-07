@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Original+Surfer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+/* Navbar */
+
+.navbar{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+/* navbar Links */
+
+.nav-links ul{
+    display: flex;
+}
+.nav-links ul li{
+    list-style: none;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    color: black;
+}
+
+/* Navbar Login Button */
+
+.nav-right{
+    display: flex;
+    gap: 40px;
+}
+
+#loginButton{
+    padding: 9px 35px;
+    background-color: #4E7D62;
+    border-radius: 13px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+hr{
+   color: rgb(109, 109, 109);
+}
+
+/* Home Section Left */
+
+.home-section{
+    display: flex;
+}
+.home-left-section{
+    background-color: #EBFFE3;
+    height: 82vh;
+    width: 60%;
+    padding: 130px 90px;
+    line-height: 60px;
+}
+.Make{
+    font-size: 45px;
+    font-weight: 400;
+}
+#shopNow{
+    margin-top: 50px;
+    padding: 12px 30px;
+    border: 1px solid;
+    background-color: transparent;
+    border-radius: 30px;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Home Section Right */
+
+.home-right-section{
+    height: 82vh;
+    width: 40%;
+    background-color: #4E7D62;
+}
+
+/* Product Image Model */
+
+.ModelChair{
+    position: absolute;
+    left: 49%;
+    top: 15%;
+}
+
+/* About Section */
+
+.about-section{
+    height: 70vh;
+}
+
+.about-center {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 55vh;
+   
+}
+.aboutText{
+    font-weight: 300;
+    font-size: 17px;
+    color: rgb(142, 142, 142);
+}
+.about-center p{
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/* Categories Container */
+
+.categories-container{
+    height: 40vh;
+}
+.categories-box{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+}
+.cat-box{
+    width: 200px;
+    height: 23vh;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.cat-box:hover{
+    background-color: #EBFFE3;
+    
+}
+
+/* Latest Collection */
+
+.latest-collection-section{
+    height: 110vh;
+}
+
+.latest-top{
+    padding: 100px 90px;
+    padding-bottom: 0px;
+}
+
+.latest-top h1{
+    font-weight: 350;
+    font-size: 45px;
+}
+
+/* latest box container */
+
+.latest-products{
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 30px;
+}
+
+.latest-box{
+    padding: 90px 0;
+    padding-bottom: 0;
+    background-color: #F7F7F7;
+    height: 48vh;
+    width: 100%;
+}
+
+.box .titleText{
+    margin-top: 15px;
+}
+
+/* Nordic Products */
+
+.Nordic{
+    margin-top: -50px;
+}
+
+/* Solace Products */
+
+.Solace{
+    margin-top: -130px;
+    scale: 0.7;
+}
+
+/* Classic Dining */
+
+.Classic{
+    scale: 0.9;
+    margin-top: -40px;
+}
+
+/* View All Products */
+
+#ViewAllProducts{
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#ViewAllProducts:hover{
+    background-color: #4E7D62;
+    color: white;
+    border: 1px solid white;
+    
+}
+
+.view-all-products{
+    display: flex;
+    justify-content: right;
+    padding: 70px 90px;
+}
+
+/* Shipping Container */
+
+.shipping-container{
+    display: flex;
+    gap: 40px;
+    padding: 40px 0;
+    height: 40vh;
+    justify-content: center;
+}
+
+.shipping-box{
+    display: flex;
+    gap: 70px;
+}
+
+.ship-box{
+    display: flex;
+    height: 12vh;
+    padding: 10px;
+    gap: 20px;
+}
+
+.headText{
+    font-size: 22px;
+}
+
+.info-text .smallP{
+    font-size: 12px;
+}
+
+/* Customer Says Container */
+
+.what-our-customers-say{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 15vh;
+    margin-top: 80px;
+    gap: 70px;
+}
+
+.background-blur{
+    background-image: url(/assets/background-blur.png);
+    height: 80vh;
+    width: 100%;
+    top: -300%;
+    position: absolute;
+    z-index: -9999;
+}
+
+.content h1{
+    font-weight: 450;
+    font-size: 35px;
+}
+
+.content p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+#allReviews{
+    margin-top: 30px;
+    width: 40%;
+    height: 50px;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 30px;
+    color: white;
+    background-color: #4E7D62;
+}
+
+/* FAQ SECTION */
+
+.FAQ{
+    height: 89vh;
+    margin-top: 170px;
+    padding: 120px 90px;
+}
+
+.FAQ-left h1{
+    font-weight: 300;
+}
+
+
