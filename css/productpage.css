@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Original+Surfer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+/* navbar Links */
+
+.nav-links ul{
+    display: flex;
+}
+.nav-links ul li{
+    list-style: none;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    color: black;
+}
+
+/* Navbar Login Button */
+
+.nav-right{
+    display: flex;
+    gap: 30px;
+}
+hr{
+   color: rgb(109, 109, 109);
+}
+.profile img{
+    margin: 0 5px;
+}
+
+        /* First-container */
+
+.first-container{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 40px;
+    
+}
+.left-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBFFE3;
+    padding: 20px;
+    height: 69vh;
+    width:90%;
+    margin-left: 45px;
+}
+.right-container{
+    margin-right: 20px;
+}
+.right-container p{
+    margin-top: 5px;
+    font-size: 16px;
+    width: 80%;
+    font-weight: 300;
+}
+.right-container h2{
+    margin-top: 5px;
+    font-size: 35px;
+    font-weight: 500;
+}
+.right-container h1{
+    font-weight: 300;
+}
+.right-container input{
+    width: 80px;
+    text-align: center;
+    height: 4vh;
+}
+.right-container input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: auto;
+    appearance: auto;
+    opacity: 1;
+    align-items: center;
+}
+.category p{
+    font-weight: 400;
+}
+.category span{
+    font-weight: 200;
+}
+.available-colors h6{
+    font-weight: 400;
+    font-size: 15px;
+}
+.available-colors input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    appearance: none;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+.available-colors input[type="checkbox"]:checked {
+    background-color: #4E7D62;
+}
+.available-colors input p{
+    display: flex;
+}
+.available-colors{
+    margin-top: 5px;
+}
+.available-size p{
+    font-weight:300;
+}
+.checkbox{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.checkbox p{
+    margin-bottom: 5px;
+}
+.size-1 input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    appearance: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid grey;
+}
+.size-1 input[type="checkbox"]:checked{
+    background-color: #4E7D62;
+}
+.size-1{
+
+    display: flex;
+    gap: 10px;
+}
+.size-1 input{
+    margin-top: 8px;
+}
+.size-1 p{
+    margin-bottom: 10px;
+}
+.size-2 input[type="checkbox"]{
+    width: 20px;
+    height: 18px;
+    appearance: none;
+    border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.size-2 input[type="checkbox"]:checked{
+    background-color: #4E7D62;
+}
+.size-2{
+    display: flex;
+    gap: 10px;
+}
+.size-2 input{
+    margin-top: 7px;
+}
+.size-2 button{
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #4E7D62;
+    width: 30%;
+    height: 7vh;
+    font-weight: 300;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+.btn button{
+    padding: 10px;
+    width: 26%; 
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 300;
+    height: 7vh;
+}
+.btn .buynow{
+    width: 26%;
+    background-color: #4E7D62;
+    border: none;
+    color: white;
+}
+.btn .add{
+    background: none;
+    border: 1px solid #4E7D62 ;
+}
+.hr hr{
+   width: 95%;
+
+}
+.hr{
+    margin-left: 90px;
+}
+.description-container{
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-right: 50px;
+}
+.description-content h4{ 
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.description-content p{
+    font-weight:300;
+    text-align: justify;
+}
+.similar-img img{
+    background-color: #F7F7F7;
+    padding: 10px;
+}
+.similar-img{
+    display: flex;
+    gap: 20px;
+}
+.similar-product{
+    margin-left: 90px;
+    margin-top: 20%;
+}
+.similar-content h4{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.similar-name{
+    margin-top: 5px;
+    display: flex;
+    gap:70px;
+}
+.similar-name h5{
+    font-weight: 300;
+}

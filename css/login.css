@@ -20,7 +20,6 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 50px;
     gap: 100px;
 }
 .container{
@@ -45,8 +44,10 @@ body{
     font-size: 20px;
     align-self: center;
     margin-left: 90px;
+    font-weight: 500;
 }
 .arrow-left img{
+    cursor: pointer;
     margin-right: 20px;
     align-self: left;
 
@@ -85,6 +86,7 @@ body{
     gap: 15px;
 }
 .loginbtn button{
+    cursor: pointer;
     width: 100%;
     height: 50px;
     padding: 0 10px;
@@ -95,6 +97,7 @@ body{
     font-size: large;
 }
 .forgotpassword{
+    cursor: pointer;
     color: #4E7D62;
 }
 .or{
@@ -112,6 +115,7 @@ body{
     font-size: 10px;
 }
 .google{
+    cursor: pointer;
     background-color:#FFFFFF;
     border-radius: 5px;
     height: 50px;
@@ -143,6 +147,7 @@ body{
     font-weight:300;
 }
 .signupbtn{
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,3 +158,124 @@ body{
 .signupbtn h4{
     color: #4E7D62;
 }
+
+       
+            /* MOBILE RESPONSIVE */
+
+
+@media screen and (max-width: 768px) {
+
+            body {
+                background-image: url(/assets/mobile/Login\ \(Mobile\).png);
+                width: 100%;
+                min-height: 100vh;
+                height: auto;
+                overflow-x: hidden;
+                overflow-y: hidden;
+                background-attachment: fixed;
+            }
+
+            .logincontainer {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                width: 100%;
+                min-height: 100vh;
+                padding: 25px 16px 35px;
+            }
+
+            .logo img {
+                width: 170px;
+                max-width: 80%;
+                height: auto;
+                margin: 0;
+            }
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                order: 2;
+            }
+
+            .container {
+                display: contents;
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .title {
+                order: 1;
+                gap: 8px;
+                margin: 0;
+            }
+
+            .title h1 {
+                font-size: 25px;
+            }
+
+            .login {
+                order: 3;
+                width: 100%;
+                height: auto;
+                padding: 22px 18px;
+            }
+
+            .arrow-left {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+            }
+            .arrow-left img  {
+                display: none;
+                width: 35px;
+                height: auto;
+                margin: 0;
+    }
+
+    .arrow-left h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 0;
+    }
+
+    .username input,
+    .password input {
+        width: 100%;
+        height: 4vh;
+        box-sizing: border-box;
+    }
+
+    .loginbtn button {
+        width: 100%;
+        height: 4vh;
+        font-size: 15px;
+    }
+
+    .google {
+        width: 100%;
+        height: 5vh;
+        box-sizing: border-box;
+    }
+
+    .terms {
+        width: 100%;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .terms p {
+        margin-right: 0;
+    }
+
+    .signupbtn {
+        margin: 15px 0 0;
+        font-size: 12px;
+    }
+    .forgotpassword p{
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+

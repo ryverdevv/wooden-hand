@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Original+Surfer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+/* Navbar */
+
+.navbar{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+/* navbar Links */
+ 
+.nav-links ul{
+    display: flex;
+}
+.nav-links ul li{  
+    list-style: none;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    color: black;
+}
+
+/* Navbar Login Button */
+
+.nav-right{
+    display: flex;
+    gap: 40px;
+}
+#loginButton{
+    padding: 9px 35px;
+    background-color: #4E7D62;
+    border-radius: 13px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+hr{
+   color: rgb(109, 109, 109);
+}
+.container{
+    padding: 5%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+                /* left container */
+
+.title h4{
+    font-size: 40px;
+    font-weight: 400;
+}
+.title p{
+    font-size: 11px;
+    font-weight:200;
+    width: 100%;
+}
+.n-e{
+   display: flex;
+   align-items: center;
+   gap: 46%;
+   margin-top: 30px;
+}
+.n-e h5{
+    font-weight: 400;
+}
+.textbox{
+    display: flex;
+    gap: 30px;
+    margin-top: 15px;
+}
+.textbox input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #4E7D62;
+    width: 80%;
+    outline: none;
+}
+.message{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.message label{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+.message textarea{
+    margin-top: 5px;
+    width: 100%;
+    height: 20vh;
+    padding: 10px;
+    font-weight: 200;
+    border-radius: 10px;
+    border: 1px solid #4E7D62;
+    outline: none;
+    font-weight: 400;
+}
+.btn{
+    margin-top:50px;
+}
+.btn button{
+    background: transparent;
+    border: none;
+    background-color: #4E7D62;
+    padding:10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-size: 10px;
+}
+
+            /* right container */
+
+.right-container{
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #4E7D62;
+    height: 60vh;
+    width: 30%;
+    gap: 50px;
+    
+}
+.location{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.text h4{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+.text p{
+    margin-left: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 10px;
+}
+.email {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.email h4{
+    font-weight:400;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 35px;
+}
+.email p{
+    margin-left: 10px;
+    font-weight: 200;
+    font-size: 12px;
+}
+.follow{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    color: white;
+}
+.follow h4{
+    font-weight: 400;
+    margin-left: 10px;
+}
+.followicon{
+    margin-left: 50px;
+    display: flex;
+    gap:30px;
+}

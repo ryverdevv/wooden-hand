@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/myorders.css">
+    <title>Wooden-Hand Userprofile</title>
+</head>
+    <body>
+
+        <!-- Nav-left container -->
+
+        <div class="nav-bar-left">
+            <div class="nav-leftlogo">
+                <img src="/assets/LOGO/logo.png" width="100px">
+            </div>
+
+            <div class="nav-left-myaccount">
+                <img src="/assets/icons/avatar.png" width="15px"><p>My account</p>
+            </div>  
+
+            <div class="nav-list">
+                 <ul>
+                    <li>
+                        <a href="">Profile</a>
+                        <a href="">Payment method</a>
+                        <a href="">Addresses</a>
+                    </li>
+                </ul>
+            </div>
+                        <!-- Nav links -->
+            <div class="nav-home">
+                <img src="/assets/icons/home.png" width="20px"><a href="">Home</a>
+            </div>
+
+            <div class="nav-myorders">
+                <img src="/assets/icons/Shopping Bag.png" width="20px"><a href="">My orders</a>
+            </div>
+
+            <div class="nav-mycarts">
+                <img src="/assets/icons/Shopping Cart.png" width="20px"><a href="">My carts</a>
+            </div>
+
+            <div class="nav-settings">
+                <img src="/assets/icons/settings.png" width="20px"><a href="">Settings</a>
+            </div>
+
+            <div class="nav-logout">
+                <img src="/assets/icons/green-arrow.png" width="20px"><a href="">Log out</a>
+            </div>
+        </div>
+
+        <!--Right-Container -->
+
+
+                <!-- search bar -->
+
+        <div class="right-container">
+            <div class="search-bar"> 
+                <input type="search" placeholder="Search for items">
+                <img src="/assets/icons/Search.png" width="20px" >
+            </div>
+
+            <!-- My orders container  -->
+
+            <div class="main-container">
+                <div class="myorders">
+                    <div class="header">
+                        <h4>My orders</h4>
+                        <p>Track, manage and view your recent orders.</p>
+                    </div>
+
+                        <!-- Order Status Navigation Bar -->
+
+                    <div class="order-navbar">
+                        <div class="all-orders">
+                            <a href=""><h5>All orders</h5></a><div>1</div>
+                        </div>
+
+                        <div class="processing">
+                            <a href=""><h5>Processing</h5></a><div>1</div>
+                        </div>
+
+                        <div class="shipped">
+                            <a href=""><h5>Shipped</h5></a><div>1</div>
+                        </div>
+
+                        <div class="delivered">
+                            <a href=""><h5>Delivered</h5></a><div>1</div>
+                        </div>
+
+                        <div class="cancelled">
+                            <a href=""><h5>Cancelled</h5></a><div>1</div>
+                        </div>
+                    </div>
+
+                            <!--all orders-->
+
+                    <div id="allorders" style="display: block;">
+                        <div class="item-details">
+                        
+                        <div class="item-picture">
+                            <img src="/assets/FAQ-image/Sofa1 3.png" width="150px">
+                        </div>  
+
+                    <div class="details">
+
+                        <div class="item-name">
+                            <h4>Aura Wooden Lounge Sofa</h4>
+                            <h6>Placed on oct 25, 2026 - 10:44am</h6>
+                        </div>
+
+                            <!-- order tracker -->
+
+                        <div class="ordertracker">
+                            <div class="orderplace">
+                                 <div>✓</div>
+                                 <p>Ordered placed</p>
+                                 <hr>
+                                 <div>✓</div>
+                                 <p>Shipped</p>
+                                 <hr>
+                                 <div>✓</div>
+                                 <p> Delivered</p>
+                            </div>
+
+                            <div class="datetime">
+                                <h6>Oct 25, 2026 - 10:44am</h6>
+                                <h6>Oct 25, 2026 - 10:44am</h6>
+                                <h6>Oct 25, 2026 - 10:44am</h6>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                                <!-- Price container -->
+
+                             <div class="price">
+                                  <h5>₱ 2,499</h5>
+                                  <p>2 items</p>
+                            </div>
+                    </div>
+                    </div>
+                    
+                                                            <!-- PROCESSING -->
+
+                    <div id="processing" style="display: none;">
+                        <div class="item-details2">
+                             <div class="item-picture">
+                            <img src="/assets/FAQ-image/Sofa1 3.png" width="150px">
+                        </div>  
+
+                    <div class="details">
+
+                        <div class="item-name2">
+                            <h4>Aura Wooden Lounge Sofa</h4>
+                            <h6>Placed on oct 25, 2026 - 10:44am</h6>
+                        </div>
+
+                            <!-- order tracker -->
+
+                        <div class="ordertracker2">
+                            <h3>Processing...</h3>
+                            <input type="button" value="Cancel Order">
+                        </div> 
+                    </div>
+                    
+                                <!-- Price container -->
+
+                             <div class="price2">
+                                  <h5>₱ 2,499</h5>
+                                  <p>2 items</p>
+                            </div>
+                        </div>
+                    </div>
+
+                                                                    <!-- SHIPPED -->
+
+                    <div id="shipped" style="display: none;">
+                        <div class="item-details3">
+                        
+                        <div class="item-picture3">
+                            <img src="/assets/FAQ-image/Sofa1 3.png" width="150px">
+                        </div>  
+
+                    <div class="details3">
+
+                        <div class="item-name3">
+                            <h4>Aura Wooden Lounge Sofa</h4>
+                            <h6>Placed on oct 25, 2026 - 10:44am</h6>
+                        </div>
+
+                            <!-- order tracker -->
+
+                        <div class="ordertracker3">
+                            <div class="orderplace3">
+                                 <div>✓</div>
+                                 <p>Ordered placed</p>
+                                 <hr>
+                                 <div>✓</div>
+                                 <p>Shipped</p>
+                                 <hr>
+                                 <div>✓</div>
+                                 <p> Delivered</p>
+                            </div>
+
+                            <div class="datetime3">
+                                <h6>Oct 25, 2026 - 10:44am</h6>
+                                <h6>Oct 25, 2026 - 10:44am</h6>
+                                <h6>Oct 25, 2026 - 10:44am</h6>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                                <!-- Price container -->
+
+                             <div class="price3">
+                                  <h5>₱ 2,499</h5>
+                                  <p>2 items</p>
+                            </div>
+                    </div>
+                    </div>
+
+                                                                            <!-- DELIVERED -->
+
+                    <div id="delivered" style="display: none;">
+                        <div class="item-details4">
+                        
+                        <div class="item-picture4">
+                            <img src="/assets/FAQ-image/Sofa1 3.png" width="150px">
+                        </div>  
+
+                    <div class="details4">
+
+                        <div class="item-name4">
+                            <h4>Aura Wooden Lounge Sofa</h4>
+                            <h6>Placed on oct 25, 2026 - 10:44am</h6>
+                        </div>
+
+                            <!-- order tracker -->
+
+                        <div class="ordertracker4">
+                            <div class="orderplace3">
+                                 <div>✓</div>
+                                 <p>Ordered placed</p>
+                                 <hr>
+                                 <div>✓</div>
+                                 <p>Shipped</p>
+                                 <hr>
+                                 <div>✓</div>
+                                 <p> Delivered</p>
+                            </div>
+
+                            <div class="datetime4">
+                                <h6>Oct 25, 2026 - 10:44am</h6>
+                                <h6>Oct 25, 2026 - 10:44am</h6>
+                                <h6>Oct 25, 2026 - 10:44am</h6>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                                <!-- Price container -->
+
+                             <div class="price4">
+                                  <h5>₱ 2,499</h5>
+                                  <p>2 items</p>
+                            </div>
+                    </div>
+                    </div>
+
+                                                                                <!-- CANCELLED -->
+
+                    <div id="delivered" style="display: none;">
+                        <div class="item-details5">
+                        
+                        <div class="item-picture5">
+                            <img src="/assets/FAQ-image/Sofa1 3.png" width="150px">
+                        </div>  
+
+                    <div class="details5">
+
+                        <div class="item-name5">
+                            <h4>Aura Wooden Lounge Sofa</h4>
+                            <h6>Placed on oct 25, 2026 - 10:44am</h6>
+                        </div>
+
+                            <!-- order tracker -->
+
+                        <div class="ordertracker5">
+                            <div class="orderplace5">
+                                 <div>✓</div>
+                                 <p>Ordered Cancelled</p>
+                                 
+                            </div>
+
+                            <div class="datetime5">
+                                <h6>Oct 25, 2026 - 10:44am</h6>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                                <!-- Price container -->
+
+                             <div class="price5">
+                                  <h5>₱ 2,499</h5>
+                                  <p>2 items</p>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
