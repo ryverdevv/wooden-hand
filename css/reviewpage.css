@@ -204,3 +204,147 @@ hr{
 .writereview-content p{
     font-size: 13px;
 }
+
+        /* Review Page */
+
+.menu-btn{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        padding: 0 20px;
+        position: relative;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+        z-index: 10;
+    }
+    .nav-links.open{
+        display: block;
+    }
+    .nav-links ul li{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-links ul li a{
+        margin: 0;
+        padding: 15px 20px;
+    }
+    .nav-right{
+        margin-left: auto;
+        margin-right: 10px;
+        gap: 0;
+    }
+    .nav-right hr{
+        display: none;
+    }
+    .profile img{
+        width: 30px;
+    }
+
+    .customer-reviews{
+        padding: 20px 15px;
+        text-align: center;
+    }
+    .customer-reviews h4{
+        font-size: 24px;
+    }
+    .customer-reviews p{
+        font-size: 14px;
+    }
+
+    .star{
+        margin: 20px 16px 0;
+        width: auto;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 15px;
+    }
+    .right-container{
+        margin-right: 0;
+        text-align: center;
+    }
+    .right-container h4{
+        font-size: 40px;
+    }
+    .right-container p{
+        margin: 10px 0 0;
+    }
+    .hr{
+        width: 100%;
+    }
+    .hr hr{
+        height: 1px;
+        width: 100%;
+    }
+    .left{
+        align-items: center;
+        text-align: center;
+    }
+    .list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Comments{
+        margin: 20px 16px 0;
+        width: auto;
+        padding: 16px;
+    }
+    .topdiv{
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .topdiv-img img{
+        width: 50px;
+        height: 50px;
+    }
+    .customer-name{
+        flex: 1;
+        margin-left: 0;
+    }
+    .customer-name p{
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    .customer-name img{
+        width: 16px;
+    }
+    .topdiv-right p{
+        margin: 4px 0 0;
+        white-space: nowrap;
+    }
+    .bottomdiv{
+        margin: 12px 0 0;
+    }
+
+    .writereview{
+        height: auto;
+        margin: 20px 16px;
+        padding: 24px 16px;
+        text-align: center;
+    }
+    .writereview-content h3{
+        margin-left: 0;
+        font-size: 18px;
+    }
+    .writereview-content .button{
+        width: 100%;
+        margin-left: 0;
+        height: 44px;
+    }
+}

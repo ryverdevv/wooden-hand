@@ -4,20 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/userprofile.css">
+    <link rel="stylesheet" href="/css/userprofile-mobile.css">
     <title>Wooden-Hand Userprofile</title>
 </head>
     <body>
 
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <input type="checkbox" id="search-toggle" class="search-toggle">
+
+        <header class="mobile-topbar">
+            <label for="menu-toggle" class="hamburger" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <label for="search-toggle" class="m-search-btn" aria-label="Search">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+                </svg>
+            </label>
+        </header>
+
+        <div class="m-searchbar">
+            <input type="search" placeholder="Search for items">
+        </div>
+
+        <label for="menu-toggle" class="drawer-overlay" aria-label="Close menu"></label>
+
         <!-- Nav-left container -->
 
         <div class="nav-bar-left">
+
             <div class="nav-leftlogo">
                 <img src="/assets/LOGO/logo.png" width="100px">
             </div>
 
             <div class="nav-left-myaccount">
                 <img src="/assets/icons/avatar.png" width="15px"><p>My account</p>
-            </div>  
+            </div>
 
             <div class="nav-list">
                  <ul>
@@ -48,11 +74,12 @@
             <div class="nav-logout">
                 <img src="/assets/icons/green-arrow.png" width="20px"><a href="">Log out</a>
             </div>
+
         </div>
 
         <!-- Nav-Right-Container -->
 
-        <div class="right-container" id="myprofile" style="display: block;">
+        <div class="right-container" id="myprofile" style="display: none;">
             <div class="search-bar"> 
                 <input type="search" placeholder="Search for items">
                 <img src="/assets/icons/Search.png" width="20px" >
@@ -256,7 +283,7 @@
 
                     <!-- Payment method -->
 
-        <div class="right-container2" id="payment" style="display: none;">
+        <div class="right-container2" id="payment" style="display: block;">
             <div class="search-bar"> 
                 <input type="search" placeholder="Search for items">
                 <img src="/assets/icons/Search.png" width="20px" >

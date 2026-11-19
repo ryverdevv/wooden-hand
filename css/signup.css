@@ -160,6 +160,9 @@ body{
 
     /*verification */
 
+.rcontainer{
+    display: flex;
+}
 .title2{
     display: flex;
     justify-content: center;
@@ -353,3 +356,279 @@ body{
     margin-top: 50px;
     margin-bottom: 40px;
 }
+
+/* MOBILE RESPONSIVE (SIGNUP) */   
+
+@media screen and (max-width: 768px) {
+    
+    #verification {
+        display: none !important;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #signup {
+        display: none !important;
+    }
+
+    #CreatAccount{
+        display: block;
+    }
+
+     body {
+     background-image: url(/assets/mobile/Login\ \(Mobile\).png);
+     width: 100%;
+     min-height: 100vh;
+     height: auto;
+     overflow-x: hidden;
+     overflow-y: hidden;
+     background-attachment: fixed;   
+    }
+
+    /* SIGN UP */
+
+    .logincontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        width: 100%;
+        min-height: 100vh;
+        padding: 25px 16px 35px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 150px;
+        height: auto;
+        margin: 0;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .title {
+        display: none;
+        order: 1;
+        text-align: center;
+        gap: 8px;
+        margin: 0;
+        margin-top: 25px;
+        
+    }
+
+    .title h1 {
+        font-size: 24px;
+    }
+
+    .login {
+        width: 100%;
+        max-width: 420px;
+        margin: auto;
+        padding: 20px;
+        margin-bottom: 200px;
+    }
+
+    .arrow-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .arrow-left img {
+        display: none;
+        width: 35px;
+        margin-right: 5px;
+    }
+
+    .arrow-left h2 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .password input,
+    .loginbtn button,
+    .google {
+        width: 100%;
+        height: 45px;
+    }
+
+    .terms {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .terms p {
+        margin-right: 0;
+    }
+    .signupbtn p{
+        font-weight: 300;
+    }
+}
+
+        /* MOBILE RESPONSIVE (VERIFICATION) */  
+
+
+
+@media screen and (max-width: 768px) {
+    /* Main verification container */
+    .rcontainer {
+        display: contents !important;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    /* Title */
+    .title2 {
+        display: none;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+
+    .title2 h1 {
+        font-size: 28px;
+    }
+
+    /* Verification box */
+    .container3 {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        padding: 25px 15px;
+        box-sizing: border-box;
+        gap: 30px;
+        border-radius: 20px;
+        margin-bottom: 100px;
+    }
+
+    .container3 img {
+        width: 65px;
+        height: auto;
+    }
+
+    /* Verification text */
+    .code h3 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .code p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* 4-digit boxes */
+    .box {
+        width: 100%;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        width: 55px;
+        height: 65px;
+        box-sizing: border-box;
+    }
+
+    /* Resend text */
+    .m p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* Buttons */
+    .btn2 {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .btn2 button {
+        width: 50%;
+        height: 42px;
+        font-size: 16px;
+        margin: 0;
+    }
+}
+
+    /* /* MOBILE RESPONSIVE (CREATING ACCOUNT) */   
+
+@media (max-width: 768px) {
+
+    .rcontainer2 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+        width: 100%;
+        max-width: 450px;
+        padding: 25px 20px;
+        border-radius: 22px;
+        box-sizing: border-box;
+        gap: 20px;
+    }
+
+    .title3 {
+        display: none;
+        font-size: 23px;
+    }
+
+    .arrow {
+        justify-content: flex-start;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .arrow h3 {
+        margin-right: 0;
+        font-size: 17px;
+    }
+
+    .arrow img {
+        width: 30px;
+        height: auto;
+    }
+
+    .btn3 input {
+        height: 30px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .checkbox {
+        gap: 8px;
+        margin-top: 15px;
+    }
+
+    .checkbox input {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+    }
+
+    .cbtn {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .cbtn input {
+        height: 30px;
+        font-size: 17px;
+        box-sizing: border-box;
+    }
+}
+

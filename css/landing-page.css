@@ -5,14 +5,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-html{
-    scroll-behavior: smooth;
-}
 body{
     height: 100vh;
     width: 100%;
 }
-
+#menu-toggle, .hamburger{
+    display: none;
+}
 /* Navbar */
 
 .navbar{
@@ -365,495 +364,267 @@ hr{
     font-weight: 200;
     cursor: pointer;
 }
-.aiCircle{
-    background-color: #3a5f4a;
-    width: 5%;
-    height: 10%;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    border: 1px solid rgb(231, 229, 229);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-}
-.aiCircle p{
-    text-align: center;
-    color: white;
-    font-size: 30px;
-}
-.tablet-navbar{
-    display: none;
-}
 
+    /* mobile version */
 
-/* tablet */
-@media screen and (max-width: 1024px) {
-
-    /* NAVBAR */
-    .navbar {
-        padding: 0 25px;
-    }
-
-    .nav-links ul li a {
-        font-size: 14px;
-        margin: 0 8px;
-    }
-
-    /* HOME */
-    .home-left-section {
-        padding: 100px 40px;
-    }
-
-    .Make {
-        font-size: 35px;
-        line-height: 1.3;
-    }
-
-    .ModelChair {
-        width: 40%;
-        left: 48%;
-        top: 18%;
-    }
-
-    /* CATEGORIES */
-    .categories-box {
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-
-    /* LATEST PRODUCTS */
-    .latest-top {
-        padding: 70px 40px 0;
-    }
-
-    .latest-products {
-        gap: 20px;
-    }
-
-    /* SHIPPING */
-    .shipping-box {
-        gap: 25px;
-    }
-
-    /* FAQ */
-    .FAQ {
-        padding: 80px 40px;
-    }
-
-    .FAQ-container {
-        gap: 40px;
-    }
-
-    .column-1 {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    /* GENERAL */
-    body {
-        width: 100%;
+@media (max-width: 768px){
+    body{
+        height: auto;
         overflow-x: hidden;
     }
 
-    /* NAVBAR */
-    .navbar {
-        width: 100%;
+    /* Navbar */
+
+    .navbar{
+        position: relative;
+        flex-wrap: wrap;
+        height: auto;
         min-height: 80px;
-        padding: 15px 15px;
+        padding: 0 24px;
+    }
+    .nav-left{
+        order: 1;
+    }
+    .nav-left img{
+        width: 56px;
+    }
+    .hamburger{
+        order: 2;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .nav-right {
-        gap: 10px;
-    }
-
-    .tablet-navbar {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        margin-bottom: 20px;
-    }
-    #hamburgerBtn {
-        background-color: transparent;
-        color: #4E7D62;
-        border: none;
-        border-radius: 8px;
-        padding: 8px 14px;
-        font-size: 25px;
+        flex-direction: column;
+        gap: 6px;
         cursor: pointer;
+    }
+    .hamburger span{
+        display: block;
+        width: 30px;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #36C48A;
+    }
+    .nav-links,
+    .nav-right{
+        display: none;
+        width: 100%;
+    }
+    .nav-links{
+        order: 3;
+    }
+    .nav-right{
+        order: 4;
+        padding-bottom: 20px;
+    }
+    #menu-toggle:checked ~ .nav-links,
+    #menu-toggle:checked ~ .nav-right{
+        display: block;
+    }
+    .nav-links ul li{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-links ul li a{
+        margin: 0;
+        padding: 12px 0;
     }
     .nav-right hr{
         display: none;
     }
+    #loginButton{
+        width: 100%;
+    }
 
-    #loginButton {
+    /* Hero */
+
+    .home-section{
+        position: relative;
+        display: block;
+        height: clamp(560px, 170vw, 760px);
+        background-color: #EBFFE3;
+    }
+    .home-right-section{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 32%;
+        height: 100%;
+    }
+    .home-left-section{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        padding: 18% 24px 0;
+        background-color: transparent;
+        line-height: normal;
+    }
+    .furnitureMade{
+        font-size: 14px;
+    }
+    .Make{
+        margin-top: 24px;
+        font-size: clamp(24px, 7.6vw, 40px);
+        line-height: 1.6;
+    }
+    .Make br{
+        display: none;
+    }
+    #shopNow{
+        margin-top: 40px;
+    }
+    .ModelChair{
+        z-index: 2;
+        top: auto;
+        bottom: 6%;
+        left: 34%;
+        width: 58%;
+        height: auto;
+    }
+
+    /* About */
+
+    .about-section{
+        height: auto;
+    }
+    .about-center{
+        height: auto;
+        padding: 60px 24px;
+    }
+    .about-center p{
+        font-size: 18px;
+    }
+    .about-center br{
         display: none;
     }
 
-    /* HOME SECTION */
-    .home-section {
-        flex-direction: column;
-        position: relative;
-    }
+    /* Categories */
 
-    .home-left-section {
-        width: 100%;
+    .categories-container{
         height: auto;
-        min-height: 420px;
-        padding: 65px 25px;
-        line-height: normal;
-        background-color: #EBFFE3;
     }
-
-    .Make {
-        font-size: 30px;
-        line-height: 1.3;
-        max-width: 350px;
+    .categories-box{
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 0 24px;
     }
-
-    #shopNow {
-        margin-top: 25px;
-        padding: 10px 22px;
-        font-size: 13px;
-    }
-
-    .home-right-section {
-        width: 100%;
-        height: 220px;
-        margin-top: -1px;
-    }
-
-    .ModelChair {
-        position: absolute;
-        width: 65%;
-        max-width: 220px;
-        height: auto;
-        left: 60%;
-        top: 220px;
-        transform: translateX(-50%);
-        z-index: 2;
-    }
-
-    /* ABOUT SECTION */
-    .about-section {
-        height: auto;
-        padding: 50px 20px;
-    }
-
-    .about-center {
-        height: auto;
-        padding: 30px 0;
-    }
-
-    .aboutText {
-        font-size: 13px;
-    }
-
-    .about-center p {
-        font-size: 22px;
-    }
-
-    /* CATEGORIES */
-    .categories-container {
-        height: auto;
-        padding: 30px 15px;
-    }
-
-    .categories-box {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-    }
-
-    .cat-box {
-        width: 100%;
-        height: auto;
-        min-height: 110px;
-        padding: 8px;
-        border-radius: 15px;
-    }
-
-    .cat-box img {
-        max-width: 65px;
-        width: 100%;
+    .cat-box{
+        width: calc(50% - 8px);
         height: auto;
     }
 
-    /* LATEST COLLECTION */
-    .latest-collection-section {
+    /* Latest Collection */
+
+    .latest-collection-section{
         height: auto;
-        padding-bottom: 50px;
     }
-
-    .latest-top {
-        padding: 40px 20px 0;
+    .latest-top{
+        padding: 50px 24px 0;
     }
-
-    .latest-top h1 {
-        font-size: 28px;
+    .latest-top h1{
+        font-size: 32px;
     }
-
-    /* PRODUCT GRID */
-    .latest-products {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 15px;
-        padding: 0 15px;
-        margin-top: 25px;
-    }
-
-    .latest-box {
-        width: 100%;
-        height: auto;
-        min-height: 200px;
-        padding: 15px 8px;
-        background-color: #F7F7F7;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-
-    .latest-box img {
-        max-width: 100%;
-        height: 130px;
-        object-fit: contain;
-    }
-
-    .box .titleText {
-        font-size: 12px;
-        margin-top: 10px;
-    }
-
-    /* RESET PRODUCT POSITIONING */
-    .Nordic,
-    .Solace,
-    .Classic {
-        margin-top: 0;
-        scale: 1;
-    }
-
-    /* VIEW ALL PRODUCTS */
-    .view-all-products {
-        justify-content: center;
-        padding: 35px 20px;
-    }
-
-    #ViewAllProducts {
-        font-size: 12px;
-    }
-
-    /* SHIPPING */
-    .shipping-container {
-        height: auto;
-        padding: 30px 15px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .shipping-box {
+    .latest-products{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        gap: 16px;
+        padding: 0 24px;
     }
-
-    .ship-box {
-        height: auto;
-        padding: 5px;
-        gap: 10px;
+    .latest-box{
+        display: flex;
         align-items: center;
+        justify-content: center;
+        height: 180px;
+        padding: 0;
+    }
+    .latest-box img{
+        width: 80%;
+        margin: 0;
+        scale: 1;
+    }
+    .box .titleText{
+        font-size: 14px;
+    }
+    .view-all-products{
+        justify-content: center;
+        padding: 40px 24px;
     }
 
-    .ship-box img {
-        width: 35px;
-        height: 35px;
-        object-fit: contain;
+    /* Shipping */
+
+    .shipping-container{
+        height: auto;
+        padding: 20px 24px 40px;
+    }
+    .shipping-box{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .ship-box{
+        height: auto;
+    }
+    .headText{
+        font-size: 18px;
     }
 
-    .headText {
-        font-size: 13px;
-    }
+    /* Customers */
 
-    .info-text .smallP {
-        font-size: 10px;
-    }
-
-    /* CUSTOMER REVIEWS */
-    .what-our-customers-say {
+    .what-our-customers-say{
         flex-direction: column;
         height: auto;
         margin-top: 40px;
-        padding: 30px 20px;
-        gap: 25px;
+        padding: 0 24px;
+        gap: 24px;
+        text-align: center;
     }
-
-    .content h1 {
-        font-size: 25px;
-    }
-
-    .content p {
-        font-size: 14px;
-        margin-top: 15px;
-    }
-
-    #allReviews {
-        width: auto;
-        padding: 12px 25px;
-        font-size: 13px;
-    }
-
-    .background-blur {
-        height: 100%;
+    .background-blur{
         top: 0;
+        height: 100%;
+        background-size: cover;
+    }
+    .customer-image img{
+        width: 100%;
+        max-width: 320px;
+    }
+    .content h1{
+        font-size: 26px;
+    }
+    .content p{
+        margin-top: 16px;
+        font-size: 16px;
+    }
+    .content br{
+        display: none;
+    }
+    #allReviews{
+        width: 60%;
+        margin: 24px auto;
     }
 
     /* FAQ */
-    .FAQ {
-        height: auto;
-        margin-top: 50px;
-        padding: 50px 20px;
-    }
 
-    .FAQ-container {
+    .FAQ{
+        height: auto;
+        margin-top: 60px;
+        padding: 40px 24px;
+    }
+    .FAQ h1{
+        font-size: 28px;
+    }
+    .FAQ p{
+        font-size: 16px;
+    }
+    .FAQ-container{
         flex-direction: column;
-        gap: 20px;
+        align-items: stretch;
+        gap: 24px;
     }
-
-    .FAQ h1 {
-        font-size: 30px;
-    }
-
-    .FAQ-left {
-        width: 100%;
-    }
-
-    .FAQ-left img {
-        width: 100%;
+    .FAQ-left img{
         height: auto;
     }
-
-    .FAQ-right {
+    .column-1{
         width: 100%;
+        margin-top: 24px;
     }
-
-    .column-1 {
-        width: 100%;
-        margin-top: 25px;
+    .FAQ-right .column-1 h1{
+        font-size: 18px;
     }
-
-    .FAQ .column-1 h1 {
-        font-size: 20px;
-    }
-
-    .FAQ p {
-        font-size: 14px;
-    }
-
-    .columnButton1 {
-        font-size: 22px;
-    }
-
-    /* AI BUTTON */
-    .aiCircle {
-        width: 55px;
-        height: 55px;
-        bottom: 20px;
-        right: 20px;
-        z-index: 1000;
-    }
-
-    .aiCircle p {
-        font-size: 23px;
-    }
-}
-
-
-@media screen and (max-width: 480px) {
-
-    .Make {
-        font-size: 25px;
-    }
-
-    .home-left-section {
-        min-height: 380px;
-        padding: 55px 20px;
-    }
-
-    .home-right-section {
-        height: 180px;
-    }
-
-    .ModelChair {
-        width: 70%;
-        top: 220px;
-    }
-
-    .categories-box {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
-    }
-
-    .cat-box {
-        min-height: 90px;
-    }
-
-    .latest-top h1 {
-        font-size: 24px;
-    }
-
-    .latest-products {
-        gap: 10px;
-        padding: 0 10px;
-    }
-
-    .latest-box {
-        min-height: 170px;
-    }
-
-    .latest-box img {
-        height: 110px;
-    }
-
-    .shipping-box {
-        gap: 12px;
-    }
-
-    .FAQ {
-        padding: 40px 15px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    html,
-    body {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
-
-    .navbar {
-        position: relative;
-        width: 100%;
-        max-width: 100%;
-        height: 70px;
-        margin: 0;
-        padding: 0 15px;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
 }
