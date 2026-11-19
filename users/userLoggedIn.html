@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/landing-page.css">
+    <link rel="stylesheet" href="/css/userLoggedIn.css">
     <title>Wooden Hand - Home</title>
 </head>
 <body>
@@ -15,15 +15,23 @@
             <ul>
                 <li>
                     <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Shop</a>
-                    <a href="#">Contact</a>
+                    <a href="#aboutt">About</a>
+                    <a href="/src/login.html">Shop</a>
+                    <a href="/src/contact.html">Contact</a>
                 </li>
             </ul>
         </div>
         <div class="nav-right">
             <hr>
-            <button id="loginButton">Login</button>
+            <div class="tablet-navbar">
+                <button id="hamburgerBtn" onclick="toggleSidebar()">
+                    ☰
+                </button>
+            </div>
+            <div class="cart-profile">
+                <img id="cartBtn" src="/assets/login/addtocart.png" alt="" width="50">
+                 <img id="profileBtn" src="/assets/login/profile.png" alt="" width="50">
+            </div>
         </div>
     </div>
 
@@ -44,7 +52,7 @@
 
     <!-- About Section -->
 
-    <div class="about-section">
+    <div class="about-section" id="aboutt">
         <div class="about-center">
             <h2 class="aboutText">ABOUT</h2>
             <p>Quality wooden furniture, thoughtfully designed for <br> your home. Discover timeless pieces and customize <br> selected furniture to fit your style and space.</p>
@@ -211,9 +219,16 @@
         </div>
     </div>
 
+    <!-- AI MODEL -->
+    <div class="aiCircle">
+        <p>Ai</p>
+    </div>
+    <!-- AI MODAL -->
+
+
     <!-- Footer Section -->
 
-    
-    
+    <script src="/function/userLoggedIn.js"></script>
+    <script src="/function/landing.js"></script>
 </body>
 </html>

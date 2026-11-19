@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/components/sidebar.css">
+    <link rel="stylesheet" href="/css/admin-products.css">
+    <title>Wooden Hand - Admin Products</title>
+</head>
+<body>
+    <div id="sidebar-container"></div>
+
+    <!-- Products Section -->
+    <div class="products-section">
+        <div class="tablet-navbar">
+            <button id="hamburgerBtn" onclick="toggleSidebar()">
+                ☰
+            </button>
+            <button id="searchBtn">
+                <img src="/assets/admin-icons/searchMobile.png" alt="" width="40">
+            </button>
+        </div>
+        <h1>Products</h1>
+        <p>Manage your furniture products and inventory.</p>
+
+        <div class="products-container">
+            <div id="TotalProductsContainer" class="dashboard-box">
+                <div class="icon-products">
+                    <img src="/assets/icons/Dashboard-icons/products.png" alt="" width="20">
+                </div>
+                <div class="total-div">
+                    <p>Total Products</p>
+                    <h1>10</h1>
+                    
+                </div>
+            </div>
+
+            <div id="TotalActiveProducts" class="dashboard-box">
+                <div class="icon-products">
+                    <img src="/assets/icons/Dashboard-icons/products.png" alt="" width="20">
+                </div>
+                <div class="total-div">
+                    <p>Active Products</p>
+                    <h1>8</h1>
+                </div>
+            </div>
+
+            <div id="LowStock" class="dashboard-box">
+                <div class="icon-products">
+                    <img src="/assets/icons/Dashboard-icons/products.png" alt="" width="20">
+                </div>
+                <div class="total-div">
+                    <p>Low Stock</p>
+                    <h1>2</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <div>
+                <img src="/assets/admin-icons/searchMobile.png" alt="" width="50">
+            </div>
+            <div>
+                <input type="search" placeholder="Search products...">
+            </div>
+            <div class="filter">
+                <button>Filter</button>
+            </div>
+            <div class="addproduct">
+                <button>+ Add product</button>
+            </div>
+        </div>
+
+        <!-- Product Inventory Container -->
+        <div id="ProductInventoryContainer">
+            <div class="titleproduct">
+                <h3>Product Inventory</h3>
+                <p>Product table preview</p>
+                <hr>
+            </div>
+
+            <div class="column1">
+                <div class="left">
+                    <img src="/assets/admin-icons/table1.png" alt="" width="70">
+                    <div class="titleproduct">
+                        <p>Classic Dining Oakwood Table</p>
+                        <p>#WH-10025</p>
+                        <p>P 3,200</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <h2>Active</h2>
+                    <div class="edit-delete">
+                        <img src="/assets//admin-icons/edit.png" alt="" width="20">
+                        <img src="/assets//admin-icons/delete.png" alt="" width="20">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/components/sidebar.js"></script>
+    <script src="/function/sidebar-toggle.js"></script>
+</body>
+</html>

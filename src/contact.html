@@ -14,16 +14,24 @@
         <div class="nav-links">
             <ul>
                 <li>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Shop</a>
-                    <a href="#">Contact</a>
+                    <a href="/users/userLoggedIn.html">Home</a>
+                    <a href="/users/userLoggedIn.html">About</a>
+                    <a href="/src/login.html">Shop</a>
+                    <a href="/src/contact.html">Contact</a>
                 </li>
             </ul>
         </div>
         <div class="nav-right">
             <hr>
-            <button id="loginButton">Login</button>
+            <div style="display: none;" class="tablet-navbar">
+                <button" id="hamburgerBtn" onclick="toggleSidebar()">
+                    ☰
+                </button>
+            </div>
+            <div class="cart-profile">
+                <img src="/assets/login/addtocart.png" alt="" width="50">
+                 <img src="/assets/login/profile.png" alt="" width="50">
+            </div>
         </div>
     </div>
 

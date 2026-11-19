@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Original+Surfer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #F6F6F6;
+}
+
+.products-section{
+    padding: 20px 40px;
+    width: 82%;
+}
+
+.products-section h1{
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.products-section p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.products-container{
+    padding: 20px 0;
+    display: flex;
+    gap: 25px;
+}
+
+.dashboard-box{
+    background-color: #CEE8D9;
+    width: 19%;
+    height: 120px;
+    border: 1px solid #4E7D62;
+    border-radius: 10px;
+    padding: 10px 10px;
+    gap: 5px;
+}
+
+.dashboard-box p{
+    font-weight: 400;
+}
+
+.dashboard-box h1{
+    margin-top: 10px;
+}
+
+/* Total Products */
+
+#TotalProductsContainer{
+    display: flex;
+    color: #4E7D62;
+}
+
+/* Total Active */
+
+#TotalActiveProducts{
+    background-color: #FFE6D3;
+    border-color: #BCAA8E;
+    display: flex;
+    color: #B48965;
+}
+
+/* Low Stock */
+
+#LowStock{
+    background-color: #DAF1FA;
+    border-color: #7FA5B4;
+    display: flex;
+    color: #2E7374;
+}
+
+/* search container */
+.search-container{
+    display: flex;   
+    gap: 15px;
+}
+
+.search-container input{
+    width: 36rem;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #BCBCBC;
+    padding: 0 15px;
+}
+.filter button{
+    height: 40px;
+    width: 90px;
+    border-radius: 5px;
+    border: 1px solid #2D2D2D;
+    background-color: #D9FFE9;
+    cursor: pointer;
+}
+.addproduct button{
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: #4E7D62;
+    color: white;
+    border: 1px solid #BCBCBC;
+    cursor: pointer;
+}
+
+/* Product Inventory */
+#ProductInventoryContainer{
+    background-color: #FFFFFF;
+    border: 1px solid #ECECEC;
+    width: 70%;
+    height: 65vh;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.titleproduct{
+    padding: 20px;
+}
+.titleproduct h3{
+    font-weight: 500;
+    font-size: 25px;
+}
+.titleproduct hr{
+    color: #888;
+    margin-top: 10px;
+}
+.column1{
+    background-color: #F6F6F6;
+    margin: 0 20px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.column1 .left{
+    display: flex;
+}   
+.column1 .right h2{
+    font-size: 15px;
+    color: #2F9E5E;
+    font-weight: 500;
+}
+.column1 .right{
+    display: flex;
+    gap: 20px;
+}
+.column1 .right .edit-delete{
+    margin-top: -30px;
+    cursor: pointer;
+}
+.tablet-navbar {
+    display: none;
+}
+#searchBtn{
+    display: none;
+}
+.search-container img{
+    display: none;
+}
+
+/* tablet */
+
+
+@media screen and (max-width: 1024px) {
+
+    #sidebar-container {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -260px;
+        width: 250px;
+        height: 100vh;
+        z-index: 1000;
+        transition: left 0.3s ease;
+    }
+
+    #sidebar-container.active {
+        left: 0;
+    }
+
+    .sidebar {
+        min-height: 100vh;
+        height: 100vh;
+    }
+
+    .tablet-navbar {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    #hamburgerBtn {
+        background-color: transparent;
+        color: #4E7D62;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 14px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .products-section {
+        width: 100%;
+    }
+
+    .sidebar {
+        position: relative;
+        padding-top: 20px;
+    }
+
+    #closeSidebarBtn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: transparent;
+        color: white;
+        border: none;
+        font-size: 25px;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+    }
+
+    
+    #TotalProductsContainer{
+       width: 50%;
+    }
+    #TotalActiveProducts{
+        width: 50%;
+    }
+    #LowStock{
+        width: 50%;
+    }
+    .search-container input{
+        width: 28rem;
+    }
+    #ProductInventoryContainer{
+        width: 100%;
+    }
+    .search-container{
+        justify-content: center;
+    }
+    .search-container img{
+        display: block;
+    }
+
+}
+
+/* Overlay */
+.sidebar-overlay {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .products-section{
+        width: 100%;
+        padding: 10px;
+    }
+
+
+    /* Sidebar */
+    #sidebar-container {
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -260px;
+        z-index: 1000;
+        transition: left 0.3s ease;
+    }
+
+     #sidebar-container.active {
+        left: 0;
+    }
+
+    .search-bar{
+        display: none;
+    }
+    
+
+    .sidebar {
+        width: 100%;
+        height: 100vh;
+        min-height: 100vh;
+        position: relative;
+        padding-top: 20px;
+    }
+
+    /* Close Button */
+    #closeSidebarBtn {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: transparent;
+        color: white;
+        border: none;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    /* Hamburger Navbar */
+    .tablet-navbar {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .search-container input{
+        display: none;
+    }
+
+    .products-container{
+        flex-wrap: wrap;
+    }
+
+    #TotalProductsContainer{
+        width: 45%;
+    }
+    #TotalActiveProducts{
+        width: 45%;
+    }
+    #LowStock{
+        width: 45%;
+    }
+
+    #ProductInvetoryContainer{
+        width: 100%;
+    }
+    .left{
+        align-items: center;
+    }
+    .left img{
+        width: 70px;
+        height: 70px;
+    }
+    .titleproduct p{
+        font-size: 10px;
+    }
+    .right h2{
+        font-size: 10px;
+    }
+    .edit-delete img{
+        width: 15px;
+        height: 15px;
+    }
+
+
+}
