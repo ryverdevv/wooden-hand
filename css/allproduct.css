@@ -9,6 +9,10 @@ body{
     height: 100vh;
     width: 100%;
 }
+#menu-toggle,
+.hamburger {
+    display: none;
+}
 .navbar{
     height: 80px;
     display: flex;
@@ -361,4 +365,211 @@ hr{
     border: 1.5px solid grey;
     cursor: pointer;
     font-weight: 300;
+}
+
+
+    /* mobile verison */
+
+@media (max-width: 768px) {
+
+    body {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 15px;
+    }
+
+    .nav-left {
+        order: 1;
+    }
+
+    .nav-right {
+        order: 2;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-right hr {
+        display: none;
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .profile img {
+        width: 32px;
+        height: 32px;
+        margin: 0;
+    }
+
+    /* HAMBURGER */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 36px;
+        height: 36px;
+        padding: 6px;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: #3DC285;
+        border-radius: 2px;
+        transition: transform 0.3s, opacity 0.3s;
+    }
+
+    /* nagiging X kapag naka-check */
+    #menu-toggle:checked ~ .nav-right .hamburger span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #menu-toggle:checked ~ .nav-right .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked ~ .nav-right .hamburger span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* LINKS: nakatago hanggang naka-check */
+    .nav-links {
+        order: 3;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        max-height: 300px;
+        margin-top: 10px;
+        border-top: 1px solid #e5e5e5;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-links ul li a {
+        display: block;
+        margin: 0;
+        padding: 12px 5px;
+        font-size: 15px;
+    }
+
+    /* TOP SECTION */
+    .top-container {
+        flex-direction: column;
+        margin: 20px 15px;
+    }
+
+    .top-left h2 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .top-left p {
+        font-size: 14px;
+    }
+
+    .top-right {
+        margin-left: 0;
+        margin-top: 20px;
+        gap: 10px;
+        overflow-x: auto;
+        padding-bottom: 5px;
+    }
+
+    .allproducts,
+    .chair,
+    .table,
+    .bed,
+    .sofa,
+    .cabinet {
+        flex-shrink: 0;
+        width: auto;
+        height: 36px;
+        padding: 0 16px;
+        white-space: nowrap;
+    }
+
+    /* PRODUCT ROWS */
+    .firstline,
+    .secondline {
+        margin-left: 0;
+        margin-top: 15px;
+        padding: 0 15px;
+    }
+
+    .firstline-img,
+    .secondline-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        width: 100%;
+    }
+
+    .firstline-img1,
+    .firstline-img2,
+    .firstline-img3,
+    .firstline-img4,
+    .secondline-img5,
+    .secondline-img6,
+    .secondline-img7,
+    .secondline-img8 {
+        width: 100%;
+        height: 170px;
+        padding: 10px;
+    }
+
+    .firstline-img img,
+    .secondline-img img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    /* PRODUCT NAMES */
+    .firstline-name,
+    .secondline-name {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 15px;
+        margin: 10px 0 0;
+        padding: 0 15px;
+    }
+
+    .firstline-name2,
+    .firstline-name3,
+    .firstline-name4,
+    .secondline-name7,
+    .secondline-name8 {
+        margin-left: 0;
+    }
+
+    /* NEXT BUTTON */
+    .btn-next {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .btn-next input {
+        width: 60%;
+        font-size: 15px;
+    }
 }

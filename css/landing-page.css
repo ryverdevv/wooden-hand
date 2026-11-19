@@ -9,7 +9,9 @@ body{
     height: 100vh;
     width: 100%;
 }
-
+#menu-toggle, .hamburger{
+    display: none;
+}
 /* Navbar */
 
 .navbar{
@@ -363,4 +365,266 @@ hr{
     cursor: pointer;
 }
 
+    /* mobile version */
 
+@media (max-width: 768px){
+    body{
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+
+    .navbar{
+        position: relative;
+        flex-wrap: wrap;
+        height: auto;
+        min-height: 80px;
+        padding: 0 24px;
+    }
+    .nav-left{
+        order: 1;
+    }
+    .nav-left img{
+        width: 56px;
+    }
+    .hamburger{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+    }
+    .hamburger span{
+        display: block;
+        width: 30px;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #36C48A;
+    }
+    .nav-links,
+    .nav-right{
+        display: none;
+        width: 100%;
+    }
+    .nav-links{
+        order: 3;
+    }
+    .nav-right{
+        order: 4;
+        padding-bottom: 20px;
+    }
+    #menu-toggle:checked ~ .nav-links,
+    #menu-toggle:checked ~ .nav-right{
+        display: block;
+    }
+    .nav-links ul li{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-links ul li a{
+        margin: 0;
+        padding: 12px 0;
+    }
+    .nav-right hr{
+        display: none;
+    }
+    #loginButton{
+        width: 100%;
+    }
+
+    /* Hero */
+
+    .home-section{
+        position: relative;
+        display: block;
+        height: clamp(560px, 170vw, 760px);
+        background-color: #EBFFE3;
+    }
+    .home-right-section{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 32%;
+        height: 100%;
+    }
+    .home-left-section{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        padding: 18% 24px 0;
+        background-color: transparent;
+        line-height: normal;
+    }
+    .furnitureMade{
+        font-size: 14px;
+    }
+    .Make{
+        margin-top: 24px;
+        font-size: clamp(24px, 7.6vw, 40px);
+        line-height: 1.6;
+    }
+    .Make br{
+        display: none;
+    }
+    #shopNow{
+        margin-top: 40px;
+    }
+    .ModelChair{
+        z-index: 2;
+        top: auto;
+        bottom: 6%;
+        left: 34%;
+        width: 58%;
+        height: auto;
+    }
+
+    /* About */
+
+    .about-section{
+        height: auto;
+    }
+    .about-center{
+        height: auto;
+        padding: 60px 24px;
+    }
+    .about-center p{
+        font-size: 18px;
+    }
+    .about-center br{
+        display: none;
+    }
+
+    /* Categories */
+
+    .categories-container{
+        height: auto;
+    }
+    .categories-box{
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 0 24px;
+    }
+    .cat-box{
+        width: calc(50% - 8px);
+        height: auto;
+    }
+
+    /* Latest Collection */
+
+    .latest-collection-section{
+        height: auto;
+    }
+    .latest-top{
+        padding: 50px 24px 0;
+    }
+    .latest-top h1{
+        font-size: 32px;
+    }
+    .latest-products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 0 24px;
+    }
+    .latest-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 180px;
+        padding: 0;
+    }
+    .latest-box img{
+        width: 80%;
+        margin: 0;
+        scale: 1;
+    }
+    .box .titleText{
+        font-size: 14px;
+    }
+    .view-all-products{
+        justify-content: center;
+        padding: 40px 24px;
+    }
+
+    /* Shipping */
+
+    .shipping-container{
+        height: auto;
+        padding: 20px 24px 40px;
+    }
+    .shipping-box{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .ship-box{
+        height: auto;
+    }
+    .headText{
+        font-size: 18px;
+    }
+
+    /* Customers */
+
+    .what-our-customers-say{
+        flex-direction: column;
+        height: auto;
+        margin-top: 40px;
+        padding: 0 24px;
+        gap: 24px;
+        text-align: center;
+    }
+    .background-blur{
+        top: 0;
+        height: 100%;
+        background-size: cover;
+    }
+    .customer-image img{
+        width: 100%;
+        max-width: 320px;
+    }
+    .content h1{
+        font-size: 26px;
+    }
+    .content p{
+        margin-top: 16px;
+        font-size: 16px;
+    }
+    .content br{
+        display: none;
+    }
+    #allReviews{
+        width: 60%;
+        margin: 24px auto;
+    }
+
+    /* FAQ */
+
+    .FAQ{
+        height: auto;
+        margin-top: 60px;
+        padding: 40px 24px;
+    }
+    .FAQ h1{
+        font-size: 28px;
+    }
+    .FAQ p{
+        font-size: 16px;
+    }
+    .FAQ-container{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+    }
+    .FAQ-left img{
+        height: auto;
+    }
+    .column-1{
+        width: 100%;
+        margin-top: 24px;
+    }
+    .FAQ-right .column-1 h1{
+        font-size: 18px;
+    }
+}
