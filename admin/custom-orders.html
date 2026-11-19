@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/components/sidebar.css">
+    <link rel="stylesheet" href="/css/admin-custom.css">
+    <title>Wooden Hand - Admin Custom Orders</title>
+</head>
+<body>
+    <div id="sidebar-container"></div>
+
+    <!-- Custom Orders Section -->
+    <div class="custom-section">
+        <div class="tablet-navbar">
+            <button id="hamburgerBtn" onclick="toggleSidebar()">
+                ☰
+            </button>
+            <button id="searchBtn">
+                <img src="/assets/admin-icons/searchMobile.png" alt="" width="40">
+            </button>
+        </div>
+        <h1>Custom Orders</h1>
+        <p>View orders with customized furniture textures.</p>
+        <div class="custom-container">
+            <div id="TotalCustomContainer" class="dashboard-box">
+                <div class="icon-products">
+                    <img src="/assets/icons/Dashboard-icons/products.png" alt="" width="20">
+                </div>
+                <div class="total-div">
+                    <p>Total Orders</p>
+                    <h1>1</h1>
+                    <p style="font-size: 11px; font-weight: 300;">Orders with customization</p>
+                </div>
+            </div>
+
+            <div id="CustomizedProducts" class="dashboard-box">
+                <div class="icon-products">
+                    <img src="/assets/icons/Dashboard-icons/products.png" alt="" width="20">
+                </div>
+                <div class="total-div">
+                    <p class="cut">Customized Products</p>
+                    <h1>4</h1>
+                    <p style="font-size: 11px; font-weight: 300;">Unique products customized</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- search -->
+
+        <div class="search-container">
+            <div>
+                <img src="/assets/admin-icons/searchMobile.png" alt="" width="50">
+            </div>
+            <div>
+                <input type="search" placeholder="Search custom orders...">
+            </div>
+            <div class="filter">
+                <button>Filter</button>
+            </div>
+        </div>
+
+        <div id="CustomInventoryContainer">
+            <div class="titleCustom">
+                <h3>Customized Purchases</h3>
+                <p>Order ID · Customer · Product · Texture · Date · Amount · Actions</p>
+                <hr>
+            </div>
+
+            <div class="column1">
+                <div class="left">
+                    <img src="/assets/admin-icons/table1.png" alt="" width="70">
+                    <div class="titleproduct">
+                        <p>WH-1001</p>
+                        <p style="font-size: 11px;">Aljhon Tumale</p>
+                        <p style="font-size: 11px;">Classic Dining<span>Oakwood Table</span></p>
+                        <div class="okay">
+                            <div class="circleColor"></div>
+                            <p style="font-size: 11px;">Oak</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <button>View Details</button>
+                    <div class="rightt">
+                        <img src="/assets/admin-icons/equalizer.png" alt="" width="30">
+                        <div>
+                            <p style="font-size: 13px;">P 3,200</p>
+                            <p style="font-size: 12px;">Sep 26,2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/function/sidebar-toggle.js"></script>
+    <script src="/components/sidebar.js"></script>
+</body>
+</html>

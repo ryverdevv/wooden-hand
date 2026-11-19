@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/components/sidebar.css">
+    <link rel="stylesheet" href="/css/admin-orders.css">
+    <title>Wooden Hand - Admin Orders</title>
+</head>
+<body>
+    <div id="sidebar-container"></div>
+
+    <!-- Orders Section -->
+    <div class="orders-section">
+        <div class="tablet-navbar">
+            <button id="hamburgerBtn" onclick="toggleSidebar()">
+                ☰
+            </button>
+            <button id="searchBtn">
+                <img src="/assets/admin-icons/searchMobile.png" alt="" width="40">
+            </button>
+        </div>
+        <h1>Orders</h1>
+        <p>Manage and track customers orders.</p>
+        <div class="orders-container">
+            <div id="TotalOrdersContainer" class="dashboard-box">
+                <div class="icon-products">
+                    <img src="/assets/icons/Dashboard-icons/products.png" alt="" width="20">
+                </div>
+                <div class="total-div">
+                    <p>Total Orders</p>
+                    <h1>1</h1>
+                    <p style="font-size: 11px; font-weight: 300;">All orders</p>
+                </div>
+            </div>
+
+            <div id="PendingOrdersContainer" class="dashboard-box">
+                <div class="icon-products">
+                    <img src="/assets/icons/Dashboard-icons/products.png" alt="" width="20">
+                </div>
+                <div class="total-div">
+                    <p>Pending Orders</p>
+                    <h1>0</h1>
+                    <p style="font-size: 11px; font-weight: 300;">Awaiting processing</p>
+                </div>
+            </div>
+
+            <div id="ProcessingContainer" class="dashboard-box">
+                <div class="icon-products">
+                    <img src="/assets/icons/Dashboard-icons/products.png" alt="" width="20">
+                </div>
+                <div class="total-div">
+                    <p>Processing</p>
+                    <h1>0</h1>
+                    <p style="font-size: 11px; font-weight: 300;">Being prepared</p>
+                </div>
+            </div>
+
+            <div id="CompletedContainer" class="dashboard-box">
+                <div class="icon-products">
+                    <img src="/assets/icons/Dashboard-icons/products.png" alt="" width="20">
+                </div>
+                <div class="total-div">
+                    <p>Completed</p>
+                    <h1>1</h1>
+                    <p style="font-size: 11px; font-weight: 300;">Successfully delivered</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- search -->
+
+        <div class="search-container">
+            <div>
+                <img src="/assets/admin-icons/searchMobile.png" alt="" width="50">
+            </div>
+            <div>
+                <input type="search" placeholder="Search products...">
+            </div>
+            <div class="filter">
+                <button>Filter</button>
+            </div>
+        </div>
+
+        <div id="OrdersInventoryContainer">
+            <div class="titleOrders">
+                <h3>Order Table</h3>
+                <p>Order ID Customer Date Total Status Actions</p>
+                <hr>
+            </div>
+
+            <div class="column1">
+                <div class="left">
+                    <img src="/assets/admin-icons/table1.png" alt="" width="70">
+                    <div class="titleproduct">
+                        <p>Classic Dining Oakwood Table</p>
+                        <p>#WH-10025</p>
+                        <p>sep 20, 2026</p>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <button>View Order</button>
+                    <div class="rightt">
+                        <div>
+                            <img class="book" src="/assets/admin-icons//booking.png" alt="" width="30">
+                        </div>
+                        <div>
+                            <p style="font-weight: 500;">P 3,200</p>
+                            <p style="color: #2F9E5E; font-weight: 500;">Shipped</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+    <script src="/function/sidebar-toggle.js"></script>
+    <script src="/components/sidebar.js"></script>
+</body>
+</html>

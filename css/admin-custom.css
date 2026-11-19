@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Original+Surfer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #F6F6F6;
+}
+.custom-section{
+    padding: 20px 40px;
+    width: 82%;
+}
+.custom-section h1{
+    margin-top: 20px;
+    font-weight: 500;
+}
+.custom-section p{
+    font-size: 14px;
+    font-weight: 300;
+}
+.custom-container{
+    padding: 20px 0;
+    display: flex;
+    gap: 25px;
+}
+.dashboard-box{
+    background-color: #CEE8D9;
+    width: 19%;
+    height: 120px;
+    border: 1px solid #4E7D62;
+    border-radius: 10px;
+    padding: 10px 10px;
+    gap: 5px;
+}
+.dashboard-box p{
+    font-weight: 400;
+}
+
+.dashboard-box h1{
+    margin-top: 10px;
+}
+/* Total Custom Orders */
+
+#TotalCustomContainer{
+    display: flex;
+    color: #742E6E;
+    border: 1px solid #742E6E;
+    background-color: #F6CCFF;
+}
+/* Customized */
+#CustomizedProducts{
+    background-color: #CEE8D9;
+    border: 1px solid #4E7D62;
+    display: flex;
+    color: #4E7D62;
+}
+/* search */
+.search-container{
+    display: flex;   
+    gap: 15px;
+}
+.search-container input{
+    width: 36rem;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #BCBCBC;
+    padding: 0 15px;
+}
+.filter button{
+    height: 40px;
+    width: 90px;
+    border-radius: 5px;
+    border: 1px solid #2D2D2D;
+    background-color: #D9FFE9;
+    cursor: pointer;
+}
+/* Custom Inventory */
+#CustomInventoryContainer{
+    background-color: #FFFFFF;
+    border: 1px solid #ECECEC;
+    width: 70%;
+    height: 65vh;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.titleCustom{
+    padding: 20px;
+}
+.titleCustom h3{
+    font-weight: 500;
+    font-size: 25px;
+}
+.titleCustom hr{
+    color: #888;
+    margin-top: 10px;
+}
+.column1{
+    background-color: #F6F6F6;
+    margin: 0 20px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    height: 90px;
+}
+.column1 .left{
+    display: flex;
+    gap: 15px;
+}
+.okay{
+    display: flex;
+    gap: 5px;
+}
+.circleColor{
+    background-color: #FFDCB4;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.column1 .right{
+    display: flex;
+    gap: 100px;
+}
+.column1 .right button{
+    padding: 0 30px;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #4E7D62;
+    color: white;
+    border: none;
+}
+
+.tablet-navbar {
+    display: none;
+}
+#searchBtn{
+    display: none;
+}
+.search-container img{
+    display: none;
+}
+.rightt img{
+    display: none;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 1022px) {
+
+    #sidebar-container {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -260px;
+        width: 250px;
+        height: 100vh;
+        z-index: 1000;
+        transition: left 0.3s ease;
+    }
+
+    #sidebar-container.active {
+        left: 0;
+    }
+
+    .sidebar {
+        min-height: 100vh;
+        height: 100vh;
+        
+    }
+
+    .tablet-navbar {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    #hamburgerBtn {
+        background-color: transparent;
+        color: #4E7D62;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 14px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .orders-section {
+        width: 100%;
+    }
+
+    .sidebar {
+        position: relative;
+        padding-top: 20px;
+    }
+
+    #closeSidebarBtn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: transparent;
+        color: white;
+        border: none;
+        font-size: 25px;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+    }
+    .search-container img{
+        display: block;
+    }
+    #TotalCustomContainer{
+        width: 50%;
+    }
+    .rightt img{
+        display: block;
+    }
+
+}
+
+/* Overlay */
+.sidebar-overlay {
+    display: none;
+}
+
+@media screen and (max-width: 1022px) {
+
+    .sidebar-overlay.active {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 999;
+    }
+
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+    .custom-section{
+        width: 100%;
+        padding: 10px;
+    }
+    /* Sidebar */
+    #sidebar-container {
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -260px;
+        z-index: 1000;
+        transition: left 0.3s ease;
+    }
+     #sidebar-container.active {
+        left: 0;
+    }
+
+    .search-bar{
+        display: none;
+    }
+    
+
+    .sidebar {
+        width: 100%;
+        height: 100vh;
+        min-height: 100vh;
+        position: relative;
+        padding-top: 20px;
+    }
+    /* Close Button */
+    #closeSidebarBtn {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: transparent;
+        color: white;
+        border: none;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    /* Hamburger Navbar */
+    .tablet-navbar {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .search-container input{
+        display: none;
+    }
+    .search-container{
+        justify-content: center;
+    }
+    .custom-container{
+        flex-wrap: wrap;
+    }
+    #TotalCustomContainer{
+        width: 46%;
+    }
+
+    .total-div h1{
+        font-size: 18px;
+    }
+    .total-div .cut{
+        font-size: 13px;
+        
+    }
+    #CustomizedProducts{
+        width: 46%;
+    }
+    #CustomInventoryContainer{
+        width: 100%;
+    }
+    .titleCustom h3{
+        font-size: 16px;
+    }
+    .titleCustom p{
+        font-size: 12px;
+    }
+    .column1 span{
+        display: none;
+    }
+    .left img{
+        width: 70px;
+        height: 70px;
+    }
+    .left{
+        align-items: center;
+    }
+    .titleproduct p{
+        font-size: 12px;
+    }
+    .right button{
+        display: none;
+    }
+    .rightt{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+}

@@ -16,14 +16,19 @@
             <ul>
                 <li>
                     <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Shop</a>
-                    <a href="#">Contact</a>
+                    <a href="#aboutt">About</a>
+                    <a href="/src/login.html">Shop</a>
+                    <a href="/src/login.html">Contact</a>
                 </li>
             </ul>
         </div>
         <div class="nav-right">
             <hr>
+            <div style="display: none;" class="tablet-navbar">
+                <button id="hamburgerBtn" onclick="toggleSidebar()">
+                    ☰
+                </button>
+            </div>
             <button id="loginButton">Login</button>
         </div>
         <label for="menu-toggle" class="hamburger">
@@ -50,7 +55,7 @@
 
     <!-- About Section -->
 
-    <div class="about-section">
+    <div class="about-section" id="aboutt">
         <div class="about-center">
             <h2 class="aboutText">ABOUT</h2>
             <p>Quality wooden furniture, thoughtfully designed for <br> your home. Discover timeless pieces and customize <br> selected furniture to fit your style and space.</p>
@@ -217,9 +222,16 @@
         </div>
     </div>
 
+    <!-- AI MODEL -->
+    <div class="aiCircle">
+        <p>Ai</p>
+    </div>
+    <!-- AI MODAL -->
+
+
     <!-- Footer Section -->
 
     
-    
+    <script src="/function/landing.js"></script>
 </body>
 </html>

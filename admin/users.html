@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/components/sidebar.css">
+    <link rel="stylesheet" href="/css/admin-users.css">
+    <title>Wooden Hand - Admin Users</title>
+</head>
+<body>
+    <div id="sidebar-container"></div>
+
+    <!-- Users Section -->
+    <div class="users-section">
+        <div class="tablet-navbar">
+            <button id="hamburgerBtn" onclick="toggleSidebar()">
+                ☰
+            </button>
+            <button id="searchBtn">
+                <img src="/assets/admin-icons/searchMobile.png" alt="" width="40">
+            </button>
+        </div>
+        <h1>Users</h1>
+        <p>Manage and track customers orders.</p>
+        <div class="users-container">
+            <div id="TotalUsersContainer" class="dashboard-box">
+                <div class="icon-products">
+                    <img src="/assets/admin-icons/Totalusers.png" alt="" width="20">
+                </div>
+                <div class="total-div">
+                    <p>Total Users</p>
+                    <h1>1</h1>
+                    <p style="font-size: 11px; font-weight: 300;">Registered accounts</p>
+                </div>
+            </div>
+
+            <div id="ActiveUsersContainer" class="dashboard-box">
+                <div class="icon-products">
+                    <img src="/assets/admin-icons/ActiveUsers.png" alt="" width="20">
+                </div>
+                <div class="total-div">
+                    <p>Active Users</p>
+                    <h1>0</h1>
+                    <p style="font-size: 11px; font-weight: 300;">Active Accounts</p>
+                </div>
+            </div>
+
+            <div id="InactiveContainer" class="dashboard-box">
+                <div class="icon-products">
+                    <img src="/assets/admin-icons/InactiveUsers.png" alt="" width="20">
+                </div>
+                <div class="total-div">
+                    <p>Inactive Users</p>
+                    <h1>0</h1>
+                    <p style="font-size: 11px; font-weight: 300;">Inactive Accounts</p>
+                </div>
+            </div>
+
+            <div id="NewUsersContainer" class="dashboard-box">
+                <div class="icon-products">
+                    <img src="/assets/admin-icons/NewUsers.png" alt="" width="20">
+                </div>
+                <div class="total-div">
+                    <p>New Users</p>
+                    <h1>1</h1>
+                    <p style="font-size: 11px; font-weight: 300;">This Month</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- search -->
+
+        <div class="search-container">
+            <div>
+                <img src="/assets/admin-icons/searchMobile.png" alt="" width="50">
+            </div>
+            <div>
+                <input type="search" placeholder="Search products...">
+            </div>
+            <div class="filter">
+                <button>Filter</button>
+            </div>
+        </div>
+
+        <div id="UsersInventoryContainer">
+            <div class="titleUsers">
+                <h3>Registered Users</h3>
+                <p>User ID Customer Email Date Joined Status Actions</p>
+                <hr>
+            </div>
+
+            <div class="column1">
+                <div class="left">
+                    <img src="/assets/admin-icons/profile.jpg" alt="" width="70" style="border-radius: 50%;">
+                    <div class="titleproduct">
+                        <p style="font-weight: 500;">Aljhon Tumale</p>
+                        <p style="font-size: 10px;">USR - 001 Aljhonpogi@gmail.com</p>
+                        <p style="font-size: 10px;">Joined Sep 20, 2026 - 1 orders</p>
+                    </div>
+                </div>
+
+                <div class="right">
+                    
+                    <button>View User</button>
+                    <div class="rightt">
+                        <img src="/assets/admin-icons/user.png" alt="" width="30">
+                        <p style="color: #2F9E5E; font-weight: 500;">Active</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+    <script src="/function/sidebar-toggle.js"></script>
+    <script src="/components/sidebar.js"></script>
+</body>
+</html>

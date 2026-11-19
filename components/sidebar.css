@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Original+Surfer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html, body {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: #F6F6F6;
+}
+
+#sidebar-container {
+    width: 18%;
+    min-height: 100vh;
+    flex-shrink: 0;
+}
+
+.sidebar {
+    background-color: #4E7D62;
+    width: 100%;
+    min-height: 125vh;
+    text-align: center;
+}
+
+.sidebar h2 {
+    color: white;
+    font-weight: 500;
+}
+
+/* Sidebar Links */
+
+.sidebar-button {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+}
+
+.sidebar-button button {
+    height: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 22px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 300;
+    transition: 0.3s ease;
+}
+
+.sidebar-button button:hover {
+    background-color: #ebffe366;
+    font-weight: 600;
+}
+
+/* ACTIVE */
+.sidebar-button button.active {
+    background-color: #ebffe366;
+    font-weight: 600;
+}
+
+.logoutContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+#logoutButton{
+    display: flex;
+    padding: 0 12px;
+    align-items: center;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 22px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+#closeSidebarBtn{
+    display: none;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    #sidebar-container {
+        width: 25%;
+    }
+
+    .sidebar-button button {
+        font-size: 18px;
+    }
+
+    #logoutButton {
+        font-size: 18px;
+        margin-top: -30px;
+    }
+
+
+
+}
+/* MOBILE */
+@media screen and (max-width: 768px) {
+    #sidebar-container {
+        width: 250px;
+    }
+
+    .sidebar {
+        min-height: 100vh;
+    }
+
+    .sidebar-button {
+        padding: 0 8px;
+    }
+
+    .sidebar-button button {
+        font-size: 16px;
+        height: 55px;
+    }
+
+    #logoutButton {
+        font-size: 16px;
+        height: 50px;
+        margin-top: -30px;
+    }
+
+    #closeSidebarBtn{
+    display: block;
+}
+}

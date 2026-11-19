@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="sidebar">
+
+    <button id="closeSidebarBtn" onclick="toggleSidebar()">
+        ✕
+    </button>
+
+    <div class="logo">
+        <img src="/assets/LOGO/logo.png" alt="" width="100">
+        <h2>Wooden Hand</h2>
+    </div>
+
+    <div class="sidebar-links">
+
+        <div class="sidebar-button">
+            <button id="Dashboard" data-page="dashboard.html"
+                onclick="navigateTo('dashboard.html')">
+                Dashboard
+            </button>
+        </div>
+
+        <div class="sidebar-button">
+            <button id="Products" data-page="products.html"
+                onclick="navigateTo('products.html')">
+                Products
+            </button>
+        </div>
+
+        <div class="sidebar-button">
+            <button id="Orders" data-page="orders.html"
+                onclick="navigateTo('orders.html')">
+                Orders
+            </button>
+        </div>
+
+        <div class="sidebar-button">
+            <button id="Users" data-page="users.html"
+                onclick="navigateTo('users.html')">
+                Users
+            </button>
+        </div>
+
+        <div class="sidebar-button">
+            <button id="Custom" data-page="custom-orders.html"
+                onclick="navigateTo('custom-orders.html')">
+                Custom Orders
+            </button>
+        </div>
+
+        <div class="sidebar-button">
+            <button id="Reviews" data-page="reviews.html"
+                onclick="navigateTo('reviews.html')">
+                Reviews
+            </button>
+        </div>
+
+        <div class="sidebar-button">
+            <button id="Reports" data-page="reports.html"
+                onclick="navigateTo('reports.html')">
+                Reports
+            </button>
+        </div>
+
+        <div class="sidebar-button">
+            <button id="Settings" data-page="settings.html"
+                onclick="navigateTo('settings.html')">
+                Settings
+            </button>
+        </div>
+
+        <div class="logoutContainer">
+            <button id="logoutButton" onclick="navigateTo('../src/login.html')">
+                <img src="/assets/admin-icons/Logout.png"
+                     alt="" width="50">
+                     
+                Logout
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<script src="/components/sidebar.js"></script>
+</body>
+</html>
