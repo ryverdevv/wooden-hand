@@ -48,38 +48,38 @@
             <div class="nav-list">
                  <ul>
                     <li>
-                        <a href="">Profile</a>
-                        <a href="">Payment method</a>
-                        <a href="">Addresses</a>
+                        <a id="profileBtn" href="#">Profile</a>
+                        <a id="paymentBtn" href="#">Payment method</a>
+                        <a id="addressBtn" href="#">Addresses</a>
                     </li>
                 </ul>
             </div>
 
             <div class="nav-home">
-                <img src="/assets/icons/home.png" width="20px"><a href="">Home</a>
+                <img src="/assets/icons/home.png" width="20px"><a id="homeBtn"  href="#">Home</a>
             </div>
 
             <div class="nav-myorders">
-                <img src="/assets/icons/Shopping Bag.png" width="20px"><a href="">My orders</a>
+                <img src="/assets/icons/Shopping Bag.png" width="20px"><a id="ordersBtn"  href="#">My orders</a>
             </div>
 
             <div class="nav-mycarts">
-                <img src="/assets/icons/Shopping Cart.png" width="20px"><a href="">My carts</a>
+                <img src="/assets/icons/Shopping Cart.png" width="20px"><a id="cartsBtn" href="#">My carts</a>
             </div>
 
             <div class="nav-settings">
-                <img src="/assets/icons/settings.png" width="20px"><a href="">Settings</a>
+                <img id="settingsBtn" src="/assets/icons/settings.png" width="20px"><a href="#">Settings</a>
             </div>
 
             <div class="nav-logout">
-                <img src="/assets/icons/green-arrow.png" width="20px"><a href="">Log out</a>
+                <img id="logoutBtn" src="/assets/icons/green-arrow.png" width="20px"><a href="login.html    ">Log out</a>
             </div>
 
         </div>
 
         <!-- Nav-Right-Container -->
 
-        <div class="right-container" id="myprofile" style="display: none;">
+        <div class="right-container" id="myprofile" style="display: block;">
             <div class="search-bar"> 
                 <input type="search" placeholder="Search for items">
                 <img src="/assets/icons/Search.png" width="20px" >
@@ -283,7 +283,7 @@
 
                     <!-- Payment method -->
 
-        <div class="right-container2" id="payment" style="display: block;">
+        <div class="right-container2" id="payment" style="display: none;">
             <div class="search-bar"> 
                 <input type="search" placeholder="Search for items">
                 <img src="/assets/icons/Search.png" width="20px" >
@@ -406,5 +406,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="/function/profile.js"></script>
     </body>
 </html>

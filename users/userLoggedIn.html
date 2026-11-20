@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/userLoggedIn.css">
+    <link rel="stylesheet" href="/css/landing-page.css">
     <title>Wooden Hand - Home</title>
 </head>
 <body>
     <div class="navbar">
+        <input type="checkbox" id="menu-toggle">
         <div class="nav-left">
             <img src="/assets/LOGO/logo.png" alt="" width="70">
         </div>
@@ -16,14 +17,14 @@
                 <li>
                     <a href="#">Home</a>
                     <a href="#aboutt">About</a>
-                    <a href="/src/login.html">Shop</a>
+                    <a href="/src/allproductpage.html">Shop</a>
                     <a href="/src/contact.html">Contact</a>
                 </li>
             </ul>
         </div>
         <div class="nav-right">
             <hr>
-            <div class="tablet-navbar">
+            <div style="display: none;" class="tablet-navbar">
                 <button id="hamburgerBtn" onclick="toggleSidebar()">
                     ☰
                 </button>
@@ -33,6 +34,11 @@
                  <img id="profileBtn" src="/assets/login/profile.png" alt="" width="50">
             </div>
         </div>
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
     </div>
 
      <!-- Home Section -->
@@ -94,7 +100,7 @@
             <h1>Latest Collection</h1>
         </div>
         <div class="latest-products">
-            <div class="box">
+            <div id="product1" class="box">
                 <div class="latest-box">
                     <img src="/assets/PRODUCTS/aura-wooden-lounge-sofa.png" alt="" width="300">
                 </div>
@@ -103,7 +109,7 @@
             </div>
 
             <div class="box">
-                <div class="latest-box">
+                <div id="product2" class="latest-box">
                     <img class="Nordic" src="/assets/PRODUCTS/nordic-craft-display-hutch.png" alt="" width="300">
                 </div>
                 <p class="titleText">Nordic Craft Display Hutch</p>
@@ -111,7 +117,7 @@
             </div>
 
             <div class="box">
-                <div class="latest-box">
+                <div id="product3" class="latest-box">
                     <img class="Solace" src="/assets/PRODUCTS/Chairs/Solace Dining Chair.png" alt="" width="300">
                 </div>
                 <p class="titleText">Solace Dining Chair</p>
@@ -220,15 +226,59 @@
     </div>
 
     <!-- AI MODEL -->
-    <div class="aiCircle">
+    <div id="openAiModal" class="aiCircle">
         <p>Ai</p>
     </div>
     <!-- AI MODAL -->
+    <div class="ai-modal-overlay" id="aiModal">
+
+    <div class="ai-modal">
+
+        <!-- Close Button -->
+        <button class="close-modal" id="closeAiModal">&times;</button>
+
+        <!-- Header -->
+        <div class="ai-header">
+            <h2>Wooden Hand AI Assistant</h2>
+            <p>Your personal furniture assistant</p>
+        </div>
+
+        <!-- Suggestions -->
+        <div class="ai-content">
+            <label>Suggestion on what to ask our AI</label>
+
+            <div class="ai-suggestions">
+                <button class="suggestion">
+                    What furniture is best for my space?
+                </button>
+
+                <button class="suggestion">
+                    How can I place an order?
+                </button>
+            </div>
+
+            <!-- Message Input -->
+            <div class="ai-input-container">
+                <input
+                    type="text"
+                    id="aiMessage"
+                    placeholder="Type your message..."
+                >
+
+                <button id="sendAiMessage">
+                    <span>&#10148;</span>
+                </button>
+            </div>
+            </div>
+
+        </div>
+
+    </div>
 
 
     <!-- Footer Section -->
 
-    <script src="/function/userLoggedIn.js"></script>
-    <script src="/function/landing.js"></script>
+    <script src="/function/aiModal.js"></script>
+    <script src="/function/userLoggedIn.js"></script> 
 </body>
 </html>

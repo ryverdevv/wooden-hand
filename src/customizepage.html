@@ -14,18 +14,18 @@
         <div class="nav-links">
             <ul>
                 <li>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Shop</a>
-                    <a href="#">Contact</a>
+                    <a href="/users/userLoggedIn.html">Home</a>
+                    <a href="/users//userLoggedIn.html">About</a>
+                    <a href="/src/allproductpage.html">Shop</a>
+                    <a href="/src/contact.html">Contact</a>
                 </li>
             </ul>
         </div>
         <div class="nav-right">
             <hr>
             <div class="profile">
-                <img src="/assets/icons/shopping-bag 1.png" alt="" width="40px">
-            <img src="/assets/icons/Group 325.png" alt="" width="40px">
+                <img id="cartBtn" src="/assets/icons/shopping-bag 1.png" alt="" width="40px">
+                <img id="profileBtn" src="/assets/icons/Group 325.png" alt="" width="40px">
             </div>
             <label for="menu-toggle" class="hamburger">
                 <span></span>
@@ -42,7 +42,7 @@
                 <!-- customize-furniture -->
             <div class="customize-furniture"> 
                 <div class="customize-furniture-back">
-                    <img src="/assets/arrowleft.png" width="40px">
+                    <img id="backarrow" style="cursor: pointer;" src="/assets/arrowleft.png" width="40px">
                     <p>Back to Product</p>
                 </div>
                  <h1>Customize Your Furniture</h1>
@@ -126,8 +126,8 @@
                                 <!-- button -->
 
                       <div class="customize-btn">
-                            <input class="customize" value="Customize" type="button">
-                            <input class="save" value="Save Design" type="button">
+                            <input  style="cursor: pointer;" class="customize" value="Customize" type="button">
+                            <input style="cursor: pointer;" id="saved" class="save" value="Save Design" type="button">
                       </div>
                 </div>
             </div>
@@ -428,5 +428,7 @@
             </div>
         </div>
     </div>
+
+    <script src="/function/userLoggedIn.js"></script>
     </body>
 </html>

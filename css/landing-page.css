@@ -44,6 +44,11 @@ body{
     gap: 40px;
 }
 
+.cart-profile{
+    cursor: pointer;
+}
+
+
 #loginButton{
     padding: 9px 35px;
     background-color: #4E7D62;
@@ -181,7 +186,7 @@ hr{
 .latest-products{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 41px;
     margin-top: 30px;
 }
 
@@ -326,6 +331,7 @@ hr{
 .FAQ-container{
     display: flex;
     align-items: center;
+    gap: 50px;
 }
 
 .FAQ .faqHead{
@@ -337,13 +343,13 @@ hr{
 }
 .FAQ h1{
     font-weight: 300;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .FAQ-left img{
     margin-top: 20px;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
 }
 
 .FAQ-right .column-1 h1{
@@ -363,8 +369,329 @@ hr{
     font-weight: 200;
     cursor: pointer;
 }
-        /* desktop */
-@media (max-width: 1024px) {}
+
+/* ============================= */
+/* MODAL BACKGROUND */
+/* ============================= */
+
+.ai-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 15px;
+}
+
+/* Show Modal */
+.ai-modal-overlay.show {
+    display: flex;
+}
+
+/* ============================= */
+/* MODAL BOX */
+/* ============================= */
+
+.ai-modal {
+    position: relative;
+    width: 900px;
+    max-width: 95%;
+    height: 620px;
+    max-height: 90vh;
+
+    border: 1px solid #4E7D62;
+    border-radius: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #e0fff0,
+        #a8f8d0,
+        #48ed9c
+    );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 50px 14%;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================= */
+/* CLOSE BUTTON */
+/* ============================= */
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 22px;
+
+    background: transparent;
+    border: none;
+
+    font-size: 32px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+.ai-header {
+    text-align: center;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.ai-header h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #222;
+}
+
+.ai-header p {
+    font-size: 18px;
+    margin-top: 12px;
+    color: #444;
+}
+
+/* ============================= */
+/* CONTENT */
+/* ============================= */
+
+.ai-content {
+    width: 100%;
+    margin-top: auto;
+}
+
+.ai-content label {
+    display: block;
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* ============================= */
+/* SUGGESTIONS */
+/* ============================= */
+
+.ai-suggestions {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.suggestion {
+    flex: 1;
+    min-width: 0;
+
+    padding: 18px;
+
+    background: white;
+    border: none;
+    border-radius: 9px;
+
+    font-size: 13px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.suggestion:hover {
+    background: #f0fff7;
+}
+
+/* ============================= */
+/* INPUT CONTAINER */
+/* ============================= */
+
+.ai-input-container {
+    display: flex;
+    align-items: center;
+
+    background: white;
+    border-radius: 9px;
+
+    padding: 8px 16px;
+}
+
+.ai-input-container input {
+    flex: 1;
+    width: 100%;
+
+    padding: 15px 5px;
+
+    border: none;
+    outline: none;
+
+    font-size: 16px;
+}
+
+.ai-input-container button {
+    background: transparent;
+    border: none;
+
+    color: #4E7D62;
+    font-size: 32px;
+
+    cursor: pointer;
+}
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    .ai-modal {
+        width: 100%;
+        height: 500px;
+        max-height: 90vh;
+
+        padding: 30px 20px;
+    }
+
+    .close-modal {
+        top: 10px;
+        right: 15px;
+        font-size: 28px;
+    }
+
+    .ai-header h2 {
+        font-size: 21px;
+    }
+
+    .ai-header p {
+        font-size: 14px;
+    }
+
+    .ai-content label {
+        font-size: 12px;
+    }
+
+    .ai-suggestions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .suggestion {
+        width: 100%;
+        padding: 14px;
+        font-size: 12px;
+    }
+
+    .ai-input-container input {
+        font-size: 14px;
+    }
+}
+
+ 
+/* Laptop Responsive: 1366px to 1024px */
+@media screen and (max-width: 1366px) and (min-width: 1025px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 0 25px;
+    }
+
+    .nav-links ul li a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .nav-right {
+        gap: 20px;
+    }
+
+    #loginButton {
+        padding: 9px 25px;
+    }
+
+    /* Hero Section */
+    .home-left-section {
+        padding: 100px 60px;
+    }
+
+    .Make {
+        font-size: 38px;
+    }
+
+    .ModelChair {
+        left: 47%;
+        width: 55%;
+    }
+
+    /* About Section */
+    .about-center p {
+        font-size: 26px;
+    }
+
+    /* Categories */
+    .categories-box {
+        gap: 35px;
+    }
+
+    .cat-box {
+        width: 180px;
+    }
+
+    /* Latest Collection */
+    .latest-top {
+        padding: 80px 60px 0;
+    }
+
+    .latest-top h1 {
+        font-size: 38px;
+    }
+
+    .latest-products {
+        gap: 20px;
+    }
+
+    .latest-box {
+        padding-top: 70px;
+    }
+
+    /* Shipping */
+    .shipping-container {
+        gap: 20px;
+    }
+
+    .shipping-box {
+        gap: 35px;
+    }
+
+    /* Customer Reviews */
+    .what-our-customers-say {
+        gap: 40px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 17px;
+    }
+
+    /* FAQ */
+    .FAQ {
+        padding: 100px 35px;
+    }
+
+    .FAQ-container {
+        gap: 30px;
+    }
+
+    .column-1 {
+        width: 130%;
+    }
+
+}
+
     /* mobile version */
 
 @media (max-width: 768px){
@@ -372,6 +699,11 @@ hr{
         height: auto;
         overflow-x: hidden;
     }
+
+    .cart-profile{
+        display: none;
+    }
+
 
     /* Navbar */
 
@@ -627,4 +959,28 @@ hr{
     .FAQ-right .column-1 h1{
         font-size: 18px;
     }
+}
+
+.aiCircle{
+    background-color: #3a5f4a;
+    width: 5%;
+    height: 10%;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(231, 229, 229);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.aiCircle p{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.tablet-navbar{
+    display: none;
 }

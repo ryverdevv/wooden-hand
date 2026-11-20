@@ -13,7 +13,7 @@
         </div>
 
         <!--sigup container-->
-        <div class="container" id="signup" style="display: none;">
+        <div class="container" id="signup" style="display: block;">
             <div class="title">
                 <h1 class="wood">WOODEN</h1>
                 <h1 class="hand">HAND</h1>
@@ -32,7 +32,7 @@
                 <input type="number" placeholder="Phone Number" min="11" max="11" required>
             </div>
             <div class="loginbtn">
-                <button type="submit">NEXT</button>
+                <button id="nextBtn" type="submit">NEXT</button>
             </div>
             <div class="or">
                 <span></span>
@@ -77,15 +77,15 @@
                 <p>Didn’t get the code? <span>Click to resend</span> </p>
             </div>
             <div class="btn2">
-                <button class="cancel">Cancel</button>
-                <button class="vr" type="submit">Verify</button>
+                <button id="cancelBtn" class="cancel">Cancel</button>
+                <button id="verifyBtn" class="vr" type="submit">Verify</button>
             </div>
             </div>
             </div>
 
                 <!-- CreatAccount -->
 
-            <div class="container2" id="create" style="display: block;">
+            <div class="container2" id="create" style="display: none;">
                 <div class="title3">
                     <h3>WOODEN <span>HAND</span></h3>
                 </div>
@@ -104,11 +104,14 @@
                         <label for="terms">I Agree with <span>Terms & Condition</span></label>
                     </div>
                         <div class="cbtn">
-                            <input type="button" value="Create Account">
+                            <input id="createBtn" type="button" value="Create Account">
                         </div>
                 </div>      
                     
             </div>
         </div>    
+
+
+        <script src="/function/signup.js"></script>
     </body>
 </html>

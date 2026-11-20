@@ -6,30 +6,33 @@
     <link rel="stylesheet" href="/css/contact.css">
     <title>Document</title>
 </head>
-        <body>
-            <div class="navbar">
-                <input type="checkbox" id="menu-toggle">
-        <div class="nav-left">
-            <img src="/assets/LOGO/logo.png" alt="" width="70">
-        </div>
+    <body>
+        <div class="navbar">
+            <input type="checkbox" id="menu-toggle">
+            <div class="nav-left">
+                <img src="/assets/LOGO/logo.png" alt="" width="70">
+            </div>
         <div class="nav-links">
             <ul>
                 <li>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Shop</a>
+                    <a href="/users/userLoggedIn.html">Home</a>
+                    <a href="/users/userLoggedIn.html">About</a>
+                    <a href="/src/allproductpage.html">Shop</a>
                     <a href="#">Contact</a>
                 </li>
             </ul>
         </div>
         <div class="nav-right">
             <hr>
-            <button id="loginButton">Login</button>
             <label for="menu-toggle" class="hamburger">
                 <span></span>
                  <span></span>
                   <span></span>
             </label>
+            <div class="cart-profile">
+                <img id="cartBtn" src="/assets/login/addtocart.png" alt="" width="50">
+                 <img id="profileBtn" src="/assets/login/profile.png" alt="" width="50">
+            </div>
         </div>
     </div>
 
@@ -107,5 +110,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="/function/userLoggedIn.js"></script>
         </body>
 </html>

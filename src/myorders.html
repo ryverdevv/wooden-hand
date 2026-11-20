@@ -23,32 +23,35 @@
             <div class="nav-list">
                  <ul>
                     <li>
-                        <a href="">Profile</a>
-                        <a href="">Payment method</a>
-                        <a href="">Addresses</a>
+                        <a href="/src/userprofile.html">Profile</a>
+                        <a href="/src/userprofile.html">Payment method</a>
+                        <a href="/src/userprofile.html">Addresses</a>
                     </li>
                 </ul>
             </div>
                         <!-- Nav links -->
             <div class="nav-home">
-                <img src="/assets/icons/home.png" width="20px"><a href="">Home</a>
+                <img src="/assets/icons/home.png" width="20px"><a id="homeBtn"  href="#">Home</a>
             </div>
 
             <div class="nav-myorders">
-                <img src="/assets/icons/Shopping Bag.png" width="20px"><a href="">My orders</a>
+                <img src="/assets/icons/Shopping Bag.png" width="20px"><a id="ordersBtn"  href="#">My orders</a>
             </div>
 
             <div class="nav-mycarts">
-                <img src="/assets/icons/Shopping Cart.png" width="20px"><a href="">My carts</a>
+                <img src="/assets/icons/Shopping Cart.png" width="20px"><a id="cartsBtn" href="#">My carts</a>
             </div>
 
             <div class="nav-settings">
-                <img src="/assets/icons/settings.png" width="20px"><a href="">Settings</a>
+                <img id="settingsBtn" src="/assets/icons/settings.png" width="20px"><a href="#">Settings</a>
             </div>
 
-            <div class="nav-logout">
-                <img src="/assets/icons/green-arrow.png" width="20px"><a href="">Log out</a>
+            <div>
+                <div  class="nav-logout">
+                    <img src="/assets/icons/green-arrow.png" width="20px"><a href="/src/login.html">Log out</a>
+                </div>
             </div>
+            
             <label for="menu-toggle" class="hamburger">
                 <span></span>
                 <span></span>
@@ -80,23 +83,23 @@
 
                     <div class="order-navbar">
                         <div class="all-orders">
-                            <a href=""><h5>All orders</h5></a><div>1</div>
+                            <a id="allBtn" href="#"><h5>All orders</h5></a><div>1</div>
                         </div>
 
                         <div class="processing">
-                            <a href=""><h5>Processing</h5></a><div>1</div>
+                            <a id="processBtn"  href="#"><h5>Processing</h5></a><div>1</div>
                         </div>
 
                         <div class="shipped">
-                            <a href=""><h5>Shipped</h5></a><div>1</div>
+                            <a id="shippBtn" href="#"><h5>Shipped</h5></a><div>1</div>
                         </div>
 
                         <div class="delivered">
-                            <a href=""><h5>Delivered</h5></a><div>1</div>
+                            <a id="deliveredBtn" href="#"><h5>Delivered</h5></a><div>1</div>
                         </div>
 
                         <div class="cancelled">
-                            <a href=""><h5>Cancelled</h5></a><div>1</div>
+                            <a id="cancelBtn" href="#"><h5>Cancelled</h5></a><div>1</div>
                         </div>
                     </div>
 
@@ -275,7 +278,7 @@
 
                                                                                 <!-- CANCELLED -->
 
-                    <div id="delivered" style="display: none;">
+                    <div id="deliveredd" style="display: none;">
                         <div class="item-details5">
                         
                         <div class="item-picture5">
@@ -315,5 +318,8 @@
                 </div>
             </div>
         </div>
+
+        <script src="/function//myorders.js"></script>
+
     </body>
 </html>

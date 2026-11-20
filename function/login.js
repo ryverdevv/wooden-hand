@@ -21,3 +21,8 @@ loginBtn.addEventListener('click', () => {
     }
 
 });
+
+const signupLink = document.getElementById('SignupLink');
+signupLink.addEventListener('click', () =>{
+    window.location.href = '../src/signup.html';
+})
