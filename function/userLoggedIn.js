@@ -6,7 +6,7 @@ profileBtn.addEventListener('click', () =>{
 
 const cartBtn = document.getElementById('cartBtn');
 cartBtn.addEventListener('click', () =>{
-    window.location.href = '../src/.html'
+    window.location.href = '../src/userprofile.html'
 })
 
 const allReviews = document.getElementById('allReviews');

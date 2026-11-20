@@ -537,3 +537,135 @@ hr{
         font-size: 18px;
     }
 }
+
+
+/* PROCESSING MODAL OVERLAY */
+.processing-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.processing-overlay.active {
+    display: flex;
+}
+
+/* MODAL */
+.processing-modal {
+    position: relative;
+    width: 100%;
+    max-width: 395px;
+    min-height: 380px;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    border-radius: 35px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 30px;
+    animation: modalFade 0.3s ease;
+}
+
+/* CLOSE BUTTON */
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 23px;
+    background: none;
+    border: none;
+    font-size: 27px;
+    font-weight: 300;
+    color: #555;
+    cursor: pointer;
+}
+
+/* CHECK ICON */
+.check-icon {
+    width: 88px;
+    height: 88px;
+    border: 1.5px solid #6b9b7e;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.check-icon span {
+    font-size: 55px;
+    color: #54836a;
+    font-weight: 300;
+}
+
+/* HEADING */
+.processing-modal h2 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #54836a;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* VIEW ORDER BUTTON */
+.view-order {
+    width: 100%;
+    max-width: 280px;
+    height: 49px;
+    border: none;
+    border-radius: 11px;
+    background: #54836a;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.view-order:hover {
+    background: #416d55;
+}
+
+/* ANIMATION */
+@keyframes modalFade {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 480px) {
+
+    .processing-modal {
+        max-width: 350px;
+        min-height: 340px;
+        border-radius: 28px;
+    }
+
+    .check-icon {
+        width: 78px;
+        height: 78px;
+    }
+
+    .processing-modal h2 {
+        font-size: 17px;
+    }
+
+}
