@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/addCart.css">
+
+    <title>Wooden Hand - Cart</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+
+        <input type="checkbox" id="menu-toggle">
+
+        <div class="nav-left">
+            <img src="/assets/LOGO/logo.png" alt="" width="70">
+        </div>
+
+        <div class="nav-links">
+            <ul>
+                <li>
+                    <a href="/users/userLoggedIn.html">Home</a>
+                    <a href="/users/userLoggedIn.html">About</a>
+                    <a href="/src/allproductpage.html">Shop</a>
+                    <a href="/src/contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+
+            <hr>
+
+            <div style="display: none;" class="tablet-navbar">
+                <button id="hamburgerBtn" onclick="toggleSidebar()">
+                    ☰
+                </button>
+            </div>
+
+            <div class="cart-profile">
+                <img id="cartBtn" src="/assets/login/addtocart.png" alt="" width="50">
+                <img id="profileBtn" src="/assets/login/profile.png" alt="" width="50">
+            </div>
+
+        </div>
+
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+    </div>
+
+
+    <!-- SHOPPING CART SECTION -->
+    <div class="add-section-left-right">
+
+        <!-- LEFT SECTION -->
+        <div class="add-section">
+
+            <div class="container">
+
+                <div class="top">
+                    <h3>Shopping Continue</h3>
+                </div>
+
+                <hr>
+
+                <h3 class="shopText">Shopping Cart</h3>
+
+                <p>You have 1 item in your cart</p>
+
+
+                <!-- PRODUCT BOX -->
+                <div class="product-box">
+
+                    <div class="product-image">
+                        <img src="/assets/PRODUCTS/Tables/classic-dining-oakwood-table.png" alt="Wooden Chair">
+                    </div>
+
+                    <div class="product-name">
+                        <h4>Classic Dining Oakwood Table</h4>
+                        <p>Natural Wood</p>
+                        <p>24 x 36</p>
+                    </div>
+
+                    <div class="quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+
+                    <div class="product-price">
+                        <p>₱1,299</p>
+                    </div>
+
+                    <div class="delete-product">
+                        <button type="button">🗑</button>
+                    </div>
+
+                </div>
+
+
+                <!-- ADD MORE PRODUCT BOXES HERE -->
+
+            </div>
+
+        </div>
+
+
+                    <!-- RIGHT SECTION -->
+            <div class="wrapper-buy">
+
+                <div class="order-summary">
+
+                    <h3>Order Summary</h3>
+
+                    <div class="summary-details">
+
+                        <div class="summary-row">
+                            <p>Subtotal</p>
+                            <span>₱1,299.00</span>
+                        </div>
+
+                        <div class="summary-row">
+                            <p>Delivery Fee</p>
+                            <span>₱60.00</span>
+                        </div>
+
+                        <hr>
+
+                        <div class="summary-row total-row">
+                            <p>Total</p>
+                            <span>₱1,359.00</span>
+                        </div>
+
+                    </div>
+
+                    <button id="buyNow" class="checkout-btn">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/function/addCart.js"></script>
+    <script src="/function/userLoggedIn.js"></script>
+</body>
+</html>

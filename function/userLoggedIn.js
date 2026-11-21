@@ -6,7 +6,7 @@ profileBtn.addEventListener('click', () =>{
 
 const cartBtn = document.getElementById('cartBtn');
 cartBtn.addEventListener('click', () =>{
-    window.location.href = '../src/userprofile.html'
+    window.location.href = '../src/addCart.html'
 })
 
 const allReviews = document.getElementById('allReviews');
@@ -39,3 +39,4 @@ ViewAll.addEventListener('click', () =>{
 shopwNow.addEventListener('click', () =>{
     window.location.href = '../src/allproductpage.html';
 })
+
