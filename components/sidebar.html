@@ -7,87 +7,87 @@
 </head>
 <body>
     
+
 <div class="sidebar">
 
+    <!-- Close Sidebar Button -->
     <button id="closeSidebarBtn" onclick="toggleSidebar()">
         ✕
     </button>
 
+    <!-- Logo -->
     <div class="logo">
-        <img src="/assets/LOGO/logo.png" alt="" width="100">
+        <img src="../assets/LOGO/logo.png" alt="" width="100">
         <h2>Wooden Hand</h2>
     </div>
 
+    <!-- Sidebar Links -->
     <div class="sidebar-links">
 
         <div class="sidebar-button">
-            <button id="Dashboard" data-page="dashboard.html"
-                onclick="navigateTo('dashboard.html')">
+            <button id="Dashboard">
                 Dashboard
             </button>
         </div>
 
         <div class="sidebar-button">
-            <button id="Products" data-page="products.html"
-                onclick="navigateTo('products.html')">
+            <button id="Products">
                 Products
             </button>
         </div>
 
         <div class="sidebar-button">
-            <button id="Orders" data-page="orders.html"
-                onclick="navigateTo('orders.html')">
+            <button id="Orders">
                 Orders
             </button>
         </div>
 
         <div class="sidebar-button">
-            <button id="Users" data-page="users.html"
-                onclick="navigateTo('users.html')">
+            <button id="Users">
                 Users
             </button>
         </div>
 
         <div class="sidebar-button">
-            <button id="Custom" data-page="custom-orders.html"
-                onclick="navigateTo('custom-orders.html')">
+            <button id="Custom">
                 Custom Orders
             </button>
         </div>
 
         <div class="sidebar-button">
-            <button id="Reviews" data-page="reviews.html"
-                onclick="navigateTo('reviews.html')">
+            <button id="Reviews">
                 Reviews
             </button>
         </div>
 
         <div class="sidebar-button">
-            <button id="Reports" data-page="reports.html"
-                onclick="navigateTo('reports.html')">
+            <button id="Reports">
                 Reports
             </button>
         </div>
 
         <div class="sidebar-button">
-            <button id="Settings" data-page="settings.html"
-                onclick="navigateTo('settings.html')">
+            <button id="Settings">
                 Settings
             </button>
         </div>
 
+        <!-- Logout -->
         <div class="logoutContainer">
-            <button id="logoutButton" onclick="navigateTo('../src/login.html')">
-                <img src="/assets/admin-icons/Logout.png"
-                     alt="" width="50">
-                     
+            <button id="logoutButton">
+                <img
+                    src="../assets/admin-icons/Logout.png"
+                    alt=""
+                    width="50"
+                >
                 Logout
             </button>
         </div>
 
     </div>
+
 </div>
 
-<script src="/components/sidebar.js"></script>
+
 </body>
 </html>
